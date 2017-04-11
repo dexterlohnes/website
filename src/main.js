@@ -1,37 +1,40 @@
 require('es6-promise').polyfill()
 
 import React from 'react'
+import {render} from 'react-dom'
+import {browserHistory} from 'react-router'
+import {AppContainer} from 'react-hot-loader'
+import Root from './root'
 
-import routes from './routes'
-// import render, {
-//     setupReducers,
-//     replaceReducers,
-// } from '@sketchpixy/rubix/lib/node/redux-router'
-
-import reducers from './reducers'
+import configureStore from './store'
+// import './styles/styles.scss'
+import {syncHistoryWithStore} from 'react-router-redux'
 import setupReact from './setup'
+require('./favicon.ico'); // Tell webpack to load favicon.ico
 
-// Instead of doing the following:
-// import MMUApp from './reducers'
-// let store = createStore(MMUApp)
-// Also wraps the app in the Provider component, no more need to do it manually in routes
-// setupReducers(reducers)
 setupReact()
 
-render(routes, () => {
-    console.log('Completed rendering!')
-});
+const store = configureStore();
+
+// Create an enhanced history that syncs navigation events with the store
+const history = syncHistoryWithStore(browserHistory, store);
+
+
+render(
+    <AppContainer>
+        <Root store={store} history={history} />
+    </AppContainer>,
+    document.getElementById('app')
+);
 
 if (module.hot) {
-    module.hot.accept('./routes', () => {
-        // reload routes again
-        require('./routes').default;
-        render(routes);
-    });
-
-    module.hot.accept('./reducers', () => {
-        // reload reducers again
-        let newReducers = require('./reducers');
-        replaceReducers(newReducers);
+    module.hot.accept('./root', () => {
+        const NewRoot = require('./root').default;
+        render(
+            <AppContainer>
+                <NewRoot store={store} history={history} />
+            </AppContainer>,
+            document.getElementById('app')
+        );
     });
 }
