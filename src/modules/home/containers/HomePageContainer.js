@@ -1,9 +1,10 @@
-import React, {Component} from 'react'
+import React, {Component, PropTypes} from 'react'
 import HomePage from '../components/HomePage'
 import SimpleStorageContract from '../../../../build/contracts/SimpleStorage.json'
 import Web3 from 'web3'
 import {connect} from 'react-redux'
 import ui from 'redux-ui'
+import AuthService from '../../common/tools/AuthService'
 
 export const mapStateToProps = (state) => {
     return {
@@ -30,6 +31,9 @@ export const mapDispatchToProps = (dispatch) => {
     mapDispatchToProps
 )
 export default class HomePageContainer extends Component {
+    static propTypes = {
+        auth: PropTypes.instanceOf(AuthService)
+    }
 
     setStorageValue(value) {
         let self = this
@@ -71,10 +75,13 @@ export default class HomePageContainer extends Component {
     onConnect(){
         //https://mvp-b-dev.fundrequest.io/requests
         console.log('connect here')
+
     }
 
 
     render() {
+        const { auth } = this.props
+
         return (
             <HomePage
                 storageValue={this.props.ui.storageValue}
@@ -82,6 +89,7 @@ export default class HomePageContainer extends Component {
                 setStorageValue={this.setStorageValue.bind(this)}
                 onChangeInputValue={this.onChangeInputValue.bind(this)}
                 onConnect={this.onConnect.bind(this)}
+                token={auth.getToken()}
             />
         )
     }

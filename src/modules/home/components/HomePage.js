@@ -6,7 +6,8 @@ const HomePage = ({
                       inputValue,
                       onChangeInputValue = noop,
                       setStorageValue = noop,
-                      onConnect = noop
+                      onConnect = noop,
+                      token = ''
                   }) => {
     return (
         <div>
@@ -16,6 +17,7 @@ const HomePage = ({
             <input type="text" value={inputValue} onChange={onChangeInputValue}/>
             <button onClick={setStorageValue.bind(this,inputValue)}>Set Value</button>
             <button onClick={onConnect}>Connect</button>
+            <p>Token: {token}</p>
         </div>
     )
 }
