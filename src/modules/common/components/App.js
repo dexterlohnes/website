@@ -29,6 +29,8 @@ class App extends React.Component {
                 {' | '}
                 <Link to="/login">Login</Link>
                 {' | '}
+                <Link to="/blockchain">Blockchain</Link>
+                {' | '}
                 <Link onClick={this.logout.bind(this)}>Logout</Link>
                 <br/>
                 {children}

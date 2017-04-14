@@ -7,6 +7,7 @@ import NotFoundPage from './modules/common/components/NotFoundPage'
 import HomePageContainer from './modules/home/containers/HomePageContainer'
 import AuthService from './modules/common/tools/AuthService'
 import LoginPageContainer from './modules/home/containers/LoginPageContainer'
+import BlockchainContainer from './modules/blockchain/containers/BlockchainContainer'
 
 const auth = new AuthService('wdg51OXdRDPG6kEWe1Hp1xgdGZDWIn6e', 'fundrequest.eu.auth0.com');
 
@@ -23,6 +24,7 @@ export default (
         <Route path="login" component={LoginPageContainer} />
         <Route path="home" component={HomePageContainer} onEnter={requireAuth}/>
         <Route path="about" component={AboutPage} onEnter={requireAuth}/>
+        <Route path="blockchain" component={BlockchainContainer}/>
         <Route path="*" component={NotFoundPage}/>
     </Route>
 )
