@@ -1,3 +1,4 @@
+import React from 'react'
 import Auth0Lock from 'auth0-lock'
 import { browserHistory } from 'react-router'
 

@@ -1,5 +1,6 @@
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import blessPlugin from 'bless-webpack-plugin'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
 import webpack from 'webpack'
 
 let isProduction = process.env.NODE_ENV === 'production'
@@ -16,9 +17,17 @@ let plugins = [
     })
 ]
 
+if (process.env.WEBPACK_DEV_SERVER === 'true') {
+    plugins.unshift(new HtmlWebpackPlugin({
+        filename: 'index.html',
+        template: './views/index.pug',
+        cache: false
+    }))
+}
+
 if (process.env.EXTRACT_TEXT_PLUGIN === 'true') {
     plugins.unshift(new ExtractTextPlugin('css/[name].css'))
-    plugins.unshift(blessPlugin({ imports: true, compress: true }))
+    // plugins.unshift(blessPlugin({ imports: true, compress: true }))
 }
 
 if (isProduction) {
