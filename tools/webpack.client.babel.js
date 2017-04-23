@@ -31,21 +31,13 @@ if (!isProduction) {
 
 delete webpackCommonConfig.module
 
-
 export default deepmerge({
     cache: true,
-    debug: true,
     devtool: process.env.SOURCEMAP === 'true' ? 'source-map' : '',
     entry: entry,
     module: {
-        loaders: loaders
+        loaders
     },
-    // postcss: function () {
-    //     return {
-    //         normalprefixer: [autoprefixer({browsers: ['last 2 versions', '> 1%', 'ie 9']})],
-    //         rtlprefixer: [autoprefixer({browsers: ['last 2 versions', '> 1%', 'ie 9']}), rtlcss]
-    //     }
-    // },
     devServer: {
         contentBase: webpackDevServer.path,
         publicPath: webpackDevServer.path + '/assets/',
@@ -60,7 +52,7 @@ export default deepmerge({
         port: webpackDevServer.port
     },
     output: {
-        path: path.join(process.cwd(), 'public'),
+        path: path.join(process.cwd(), 'public/'),
         publicPath: webpackDevServer.path + '/assets/',
         chunkFilename: 'js/[name].js',
         filename: 'js/[name].js',

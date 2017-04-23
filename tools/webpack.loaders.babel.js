@@ -5,28 +5,34 @@ let isProduction = process.env.NODE_ENV === 'production'
 
 let loaders = webpackCommonConfig.module.loaders.concat()
 
-if (process.env.EXTRACT_TEXT_PLUGIN === 'false') {
-    loaders.concat([
-        'style',
-        'css?-minimize&importLoaders=1&root=../public&',
-        'postcss-loader?!sass?'
-    ])
+if (process.env.EXTRACT_TEXT_PLUGIN === 'true') {
+    loaders.push({
+        test: /.scss$/,
+        loaders: [
+            ExtractTextPlugin.loader({
+                extract: true,
+                omit: 1
+            }),
+            'style-loader',
+            'css-loader?-minimize&importLoaders=1',
+            'postcss-loader',
+            'sass-loader'
+        ]
+    })
 } else {
-    loaders.concat([
-        ExtractTextPlugin.loader({
-            extract: true,
-            omit: 1
-        }),
-        'style',
-        'css?-minimize&importLoaders=1&',
-        'postcss-loader?',
-        '&sass?'
-    ])
+    loaders.push({
+        test: /.scss$/,
+        loaders: [
+            'style-loader',
+            'css-loader?-minimize&importLoaders=1&root=../public&',
+            'postcss-loader?!sass-loader?'
+        ]
+    })
 }
 
-let pluginLoaders = ['script']
+let pluginLoaders = ['script-loader']
 if (isProduction) {
-    pluginLoaders.push('uglify')
+    pluginLoaders.push('uglify-loader')
 }
 loaders.push({
     test: /(\/|\\)public(\/|\\)(.*?)\.js$/,

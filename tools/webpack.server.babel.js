@@ -16,7 +16,7 @@ fs.readdirSync('node_modules')
 let sourceMapSupportModule = 'require(\'source-map-support\').install({environment: \'node\'});\n\n'
 
 let loaders = webpackCommonConfig.module.loaders.concat()
-loaders.push({test: /\.scss$/, loader: 'null'})
+loaders.push({test: /\.scss$/, loader: 'null-loader'})
 
 delete webpackCommonConfig.module
 
@@ -34,11 +34,12 @@ export default deepmerge({
         loaders: loaders
     },
     plugins: [
-        new webpack.BannerPlugin(sourceMapSupportModule, {
+        new webpack.BannerPlugin({
+            banner: sourceMapSupportModule,
             raw: true,
             entryOnly: true
         }),
-        new webpack.NoErrorsPlugin(),
+        new webpack.NoEmitOnErrorsPlugin(),
         new webpack.DefinePlugin({
             __CLIENT__: false,
             __SERVER__: true,
