@@ -1,4 +1,5 @@
-import React, {Component, PropTypes} from 'react'
+import React, {Component} from 'react'
+import PropTypes from 'prop-types'
 import HomePage from '../components/HomePage'
 import SimpleStorageContract from '../../../../build/contracts/SimpleStorage.json'
 import Web3 from 'web3'
