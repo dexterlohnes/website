@@ -41,14 +41,12 @@ export const renderHTMLString = (routes, req, callback) => {
     const store = createStore(reducers)
 
     match({routes, location: req.url}, (error, redirect, renderProps) => {
-        if (!renderProps) return callback('props not defined!')
-
-        fetchDataOnServer(renderProps, store).then(() => {
-            if (error) {
-                callback(error);
-            } else if (redirect) {
-                callback(null, redirect);
-            } else if (renderProps) {
+        if (error) {
+            callback(error)
+        } else if (redirect) {
+            callback(null, redirect)
+        } else if (renderProps) {
+            fetchDataOnServer(renderProps, store).then(() => {
                 let content
 
                 try {
@@ -62,17 +60,18 @@ export const renderHTMLString = (routes, req, callback) => {
                     callback(null, null, {
                         content: content,
                         data: store.getState()
-                    });
-                } catch(err) {
+                    })
+                } catch (err) {
                     callback({
                         message: 'something went wrong during render: ' + err
                     })
                 }
-            } else {
-                callback({
-                    message: 'Not found'
-                });
-            }
-        })
+            })
+        }
+        else {
+            callback({
+                message: 'Not found'
+            })
+        }
     })
 }
