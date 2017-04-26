@@ -20,3 +20,5 @@ npm-debug.log
 
 tmp
 local
+dist
+public/js
