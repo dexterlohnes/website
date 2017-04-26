@@ -22,3 +22,6 @@ tmp
 local
 dist
 public/js
+public/css
+
+.nyc_output

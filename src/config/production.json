@@ -1,5 +1,5 @@
 {
-    "frontEndHost": "http://localhost:8080",
-    "backEndHost": "https://mvp-b-dev.fundrequest.io/",
+    "frontEndHost": "https://mvp-f-dev.fundrequest.io",
+    "backEndHost": "https://mvp-b-dev.fundrequest.io",
     "basePath" : "/"
 }

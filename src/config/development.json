@@ -1,5 +1,5 @@
 {
     "frontEndHost": "http://localhost:8080",
-    "backEndHost": "http://localhost:8888/back-end",
+    "backEndHost": "http://localhost:8888",
     "basePath" : "/"
 }
