@@ -15,7 +15,7 @@ RUN npm init -y && \
 
 RUN mkdir /src/
 
-COPY build_webpack /src/
+COPY dist /src/
 COPY docker/server.js /src/server.js
 
 WORKDIR /src/
