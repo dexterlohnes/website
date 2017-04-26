@@ -8,7 +8,7 @@ export default class AuthService {
         // Configure Auth0
         this.lock = new Auth0Lock(clientId, domain, {
             auth: {
-                redirectUrl: config.frontEndHost + '/login',
+                redirectUrl: config.frontEndHost, //+ '/login',
                 responseType: 'token'
             }
         })
