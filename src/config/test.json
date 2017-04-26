@@ -1,0 +1,4 @@
+{
+    "mmuHost" : "http://testserver:8080",
+    "basePath" : "/front-end-base-path/"
+}
