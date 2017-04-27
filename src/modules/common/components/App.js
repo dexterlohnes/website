@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {IndexLink, Link, browserHistory} from 'react-router'
+import AuthService from '../tools/AuthService'
 
 // This is a class-based component because the current
 // version of hot reloading won't hot reload a stateless

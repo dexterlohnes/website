@@ -9,7 +9,7 @@ import AuthService from './modules/common/tools/AuthService'
 import LoginPageContainer from './modules/home/containers/LoginPageContainer'
 import BlockchainContainer from './modules/blockchain/containers/BlockchainContainer'
 
-const auth = new AuthService('wdg51OXdRDPG6kEWe1Hp1xgdGZDWIn6e', 'fundrequest.eu.auth0.com');
+const auth = new AuthService('wdg51OXdRDPG6kEWe1Hp1xgdGZDWIn6e', 'fundrequest.eu.auth0.com')
 
 // validate authentication for private routes
 const requireAuth = (nextState, replace) => {
