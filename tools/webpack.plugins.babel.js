@@ -32,7 +32,6 @@ if (process.env.EXTRACT_TEXT_PLUGIN === 'true') {
 
 if (isProduction) {
     plugins.unshift(new webpack.optimize.OccurrenceOrderPlugin())
-    plugins.unshift(new webpack.optimize.DedupePlugin())
     plugins.unshift(new webpack.optimize.UglifyJsPlugin({
         mangle: false,
         compress: {

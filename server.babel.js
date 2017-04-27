@@ -2,7 +2,7 @@ import express from 'express'
 import React from 'react'
 import path from 'path'
 
-// import routes from './src/routes'
+import routes from './src/routes'
 import {assetMiddleware, renderHTMLString} from './tools/server-tools'
 
 const port = process.env.PORT || 8080

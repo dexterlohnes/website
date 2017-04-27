@@ -8,7 +8,6 @@ import { AppContainer } from 'react-hot-loader'
 import reducers from '../src/reducers'
 import createHistory from 'react-router/lib/createMemoryHistory'
 
-
 let webpackDevServer = {}
 webpackDevServer.hostname = process.env.WP_HOST || 'localhost'
 webpackDevServer.port = process.env.WP_PORT || 8079
