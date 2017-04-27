@@ -8,18 +8,20 @@ import HomePageContainer from './modules/home/containers/HomePageContainer'
 import AuthService from './modules/common/tools/AuthService'
 import LoginPageContainer from './modules/home/containers/LoginPageContainer'
 import BlockchainContainer from './modules/blockchain/containers/BlockchainContainer'
+import config from '../src/config/getConfig'
 
 const auth = new AuthService('wdg51OXdRDPG6kEWe1Hp1xgdGZDWIn6e', 'fundrequest.eu.auth0.com')
 
 // validate authentication for private routes
 const requireAuth = (nextState, replace) => {
     if (!auth.loggedIn()) {
+        console.log(nextState)
         replace({ pathname: '/login' })
     }
 }
 
 export default (
-    <Route path="/" component={App} auth={auth}>
+    <Route path={config.basePath} component={App} auth={auth}>
         <IndexRedirect to="home"/>
         <Route path="login" component={LoginPageContainer} />
         <Route path="home" component={HomePageContainer} onEnter={requireAuth}/>

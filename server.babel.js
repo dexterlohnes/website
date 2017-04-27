@@ -4,6 +4,7 @@ import path from 'path'
 
 import routes from './src/routes'
 import {assetMiddleware, renderHTMLString} from './tools/server-tools'
+import config from './src/config/getConfig'
 
 const port = process.env.PORT || 8080
 const app = express()
@@ -20,11 +21,11 @@ function renderHtml(req,res) {
             } else {
                 res.status(500).send(error.message);
             }
-        } else if (redirectLocation) {
+        } else if (!config.useHashRouting && redirectLocation) {
             res.redirect(302, redirectLocation.pathname + redirectLocation.search);
         } else {
             res.render('index', {
-                content: html.content,
+                content: html ? html.content : '',
                 node_env: process.env.NODE_ENV
             })
         }

@@ -5,13 +5,15 @@ import config from '../../../config/getConfig'
 
 let browserStorage = (typeof localStorage === 'undefined') ? null : localStorage
 
+const redirectUrl = config.useHashRouting ? config.frontEndHost + '/#/login' : config.frontEndHost + '/login'
+
 export default class AuthService {
     constructor(clientId, domain) {
         try {
             // Configure Auth0
             this.lock = new Auth0Lock(clientId, domain, {
                 auth: {
-                    redirectUrl: config.frontEndHost + '/login',
+                    redirectUrl: redirectUrl,
                     responseType: 'token'
                 }
             })
