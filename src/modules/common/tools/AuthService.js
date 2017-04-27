@@ -1,7 +1,7 @@
 import React from 'react'
 import Auth0Lock from 'auth0-lock'
-import { browserHistory } from 'react-router'
 import config from '../../../config/getConfig'
+import {pushHistory} from './URLTools'
 
 let browserStorage = (typeof localStorage === 'undefined') ? null : localStorage
 
@@ -30,7 +30,7 @@ export default class AuthService {
         // Saves the user token
         this.setToken(authResult.idToken)
         // navigate to the home route
-        browserHistory.replace('/home')
+        pushHistory('/home')
     }
 
     login() {
