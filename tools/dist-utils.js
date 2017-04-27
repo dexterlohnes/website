@@ -10,26 +10,26 @@ var indexPath = path.join(process.cwd(), 'views', 'index.pug');
 var destIndexPath = path.join(distPath, 'index.html');
 
 module.exports = function(callback) {
-    rimraf(distPath, function() {
-        fs.mkdirSync(distPath);
+  rimraf(distPath, function() {
+    fs.mkdirSync(distPath);
 
-        ncp(publicPath, distPath, function(err) {
-            if (err) {
-                return console.error(err);
-            }
+    ncp(publicPath, distPath, function(err) {
+      if (err) {
+        return console.error(err);
+      }
 
-            var fn = pug.compileFile(indexPath, {
-                pretty: true
-            });
+      var fn = pug.compileFile(indexPath, {
+        pretty: true
+      });
 
-            var html = fn({
-                app_scripts: "\n    <script src='js/plugins.js'></script>\n    <script src='js/app.js'></script>",
-                app_stylesheets: "\n    <link rel='stylesheet' href='css/main.css' />"
-            });
+      var html = fn({
+        app_scripts: "\n    <script src='js/plugins.js'></script>\n    <script src='js/app.js'></script>",
+        app_stylesheets: "\n    <link rel='stylesheet' href='css/main.css' />"
+      });
 
-            fs.writeFileSync(destIndexPath, html + '\n');
+      fs.writeFileSync(destIndexPath, html + '\n');
 
-            if (callback) callback();
-        })
-    });
+      if (callback) callback();
+    })
+  });
 };

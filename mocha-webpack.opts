@@ -1,0 +1,4 @@
+--colors
+--webpack-config ./tools/webpack.test.babel.js
+--require source-map-support/register
+test-src/**/*.spec.js

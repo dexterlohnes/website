@@ -4,6 +4,7 @@ import path from 'path'
 import webpackCommonConfig from './webpack.common.babel'
 import loaders from './webpack.loaders.babel'
 import plugins from './webpack.plugins.babel'
+import config from '../src/config/getConfig'
 
 let isProduction = process.env.NODE_ENV === 'production'
 
@@ -11,6 +12,8 @@ let webpackDevServer = {}
 webpackDevServer.hostname = process.env.WP_HOST || 'localhost'
 webpackDevServer.port = process.env.WP_PORT || 8079
 webpackDevServer.path = 'http://' + webpackDevServer.hostname + ':' + webpackDevServer.port
+
+let publicPath = isProduction ? config.publicAssetPath : webpackDevServer.path + config.publicAssetPath
 
 let entry = {
     'app': ['./src/main.js'],
@@ -40,7 +43,7 @@ export default deepmerge({
     },
     devServer: {
         contentBase: webpackDevServer.path,
-        publicPath: webpackDevServer.path + '/assets/',
+        publicPath: webpackDevServer.path + config.publicAssetPath,
         hot: true,
         inline: false,
         lazy: false,
@@ -53,7 +56,7 @@ export default deepmerge({
     },
     output: {
         path: path.join(process.cwd(), 'public/'),
-        publicPath: webpackDevServer.path + '/assets/',
+        publicPath: publicPath,
         chunkFilename: 'js/[name].js',
         filename: 'js/[name].js',
     },

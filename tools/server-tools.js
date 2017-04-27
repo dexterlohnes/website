@@ -4,9 +4,10 @@ import {match, RouterContext} from 'react-router'
 import {createStore} from 'redux'
 import {Provider} from 'react-redux'
 import {fetchDataOnServer} from 'redux-fetch-data'
-import { AppContainer } from 'react-hot-loader'
+import {AppContainer} from 'react-hot-loader'
 import reducers from '../src/reducers'
 import createHistory from 'react-router/lib/createMemoryHistory'
+
 
 let webpackDevServer = {}
 webpackDevServer.hostname = process.env.WP_HOST || 'localhost'

@@ -56,6 +56,8 @@
     "jest": "17.0.2",
     "json-loader": "0.5.4",
     "just-wait": "^1.0.11",
+    "mocha": "3.3.0",
+    "mocha-webpack": "0.7.0",
     "ncp": "^2.0.0",
     "npm-watch": "^0.1.8",
     "null-loader": "^0.1.1",
@@ -87,6 +89,7 @@
     "webpack": "2.4.1",
     "webpack-dev-server": "2.4.2",
     "webpack-manifest-plugin": "1.1.0",
+    "webpack-node-externals": "1.5.4",
     "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
@@ -105,6 +108,7 @@
     "react-hot-loader": "^3.0.0-beta.2",
     "react-redux": "5.0.4",
     "react-router": "3.0.4",
+    "react-tap-event-plugin": "2.0.1",
     "redux": "3.6.0",
     "redux-form": "6.6.2",
     "redux-ui": "0.0.15",
@@ -139,10 +143,10 @@
     "prod": "run-s build:prod prod:server",
     "dist": "cross-env NODE_ENV=production run-s bundle:client && node tools/create-dist.js",
     "dist:watch": "run-s bundle:client && node tools/watch-dist.js",
-    "test": "cross-env NODE_ENV=test mocha --compilers js:babel-core/register ./test-src/setup.js ./test-src/**/*.spec.js",
-    "test:watch": "cross-env NODE_ENV=test mocha --compilers js:babel-core/register --recursive --watch ./test-src/setup.js ./test-src/**/*.spec.js",
-    "test:coverage": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text mocha ./test-src/setup.js ./test-src/**/*.spec.js",
-    "test:coverage:jenkins": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text mocha ./test-src/setup.js ./test-src/**/*.spec.js --reporter mocha-junit-reporter || exit 0",
+    "test": "cross-env NODE_ENV=test mocha-webpack",
+    "test:watch": "cross-env NODE_ENV=test mocha-webpack --watch",
+    "test:coverage": "nyc --reporter=lcov --reporter=text npm run test",
+    "test:coverage:jenkins": "nyc --reporter=lcov --reporter=text --reporter mocha-junit-reporter npm run test || exit 0",
     "start": "babel-node server.babel.js"
   },
   "jest": {
@@ -178,6 +182,9 @@
     "extends": "react-app"
   },
   "nyc": {
+    "include": [
+      "src/modules/**/*.js"
+    ],
     "require": [
       "babel-register"
     ],
