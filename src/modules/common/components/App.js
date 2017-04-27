@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {IndexLink, Link, browserHistory} from 'react-router'
-import AuthService from '../tools/AuthService'
+import {IndexLink, Link} from 'react-router'
+import {getPath, pushHistory} from '../tools/URLTools'
 
 // This is a class-based component because the current
 // version of hot reloading won't hot reload a stateless
@@ -11,7 +11,7 @@ class App extends React.Component {
         // destroys the session data
         this.props.route.auth.logout()
         // redirects to login page
-        browserHistory.push('/login');
+        pushHistory(getPath('login'));
     }
 
     render() {
@@ -24,13 +24,13 @@ class App extends React.Component {
 
         return (
             <div>
-                <IndexLink to="/home">Home</IndexLink>
+                <IndexLink to={getPath('home')}>Home</IndexLink>
                 {' | '}
-                <Link to="/about">About</Link>
+                <Link to={getPath('about')}>About</Link>
                 {' | '}
-                <Link to="/login">Login</Link>
+                <Link to={getPath('login')}>Login</Link>
                 {' | '}
-                <Link to="/blockchain">Blockchain</Link>
+                <Link to={getPath('blockchain')}>Blockchain</Link>
                 {' | '}
                 <Link onClick={this.logout.bind(this)}>Logout</Link>
                 <br/>

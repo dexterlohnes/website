@@ -15,7 +15,6 @@ const auth = new AuthService('wdg51OXdRDPG6kEWe1Hp1xgdGZDWIn6e', 'fundrequest.eu
 // validate authentication for private routes
 const requireAuth = (nextState, replace) => {
     if (!auth.loggedIn()) {
-        console.log(nextState)
         replace({ pathname: '/login' })
     }
 }
