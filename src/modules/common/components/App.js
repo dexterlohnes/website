@@ -27,7 +27,9 @@ let muiTheme = getMuiTheme({
 });
 
 const mapStateToProps = (state) => {
-    return {}
+    return {
+        language: state.global.locales.lang
+    }
 }
 
 const mapDispatchToProps = (dispatch) => {
@@ -49,7 +51,6 @@ class App extends React.Component {
     }
 
     render() {
-        console.log(this.props)
         let children = null
         if (this.props.children) {
             children = React.cloneElement(this.props.children, {
@@ -59,14 +60,14 @@ class App extends React.Component {
 
         return (
             <MuiThemeProvider muiTheme={muiTheme}>
-                <div>
-                    <IndexLink to={getPath('home')}>Home</IndexLink>
+                <div className="main-container">
+                    <IndexLink to={getPath(this.props.language + '/home')}>Home</IndexLink>
                     {' | '}
-                    <Link to={getPath('about')}>About</Link>
+                    <Link to={getPath(this.props.language + '/about')}>About</Link>
                     {' | '}
-                    <Link to={getPath('login')}>Login</Link>
+                    <Link to={getPath(this.props.language + '/login')}>Login</Link>
                     {' | '}
-                    <Link to={getPath('blockchain')}>Blockchain</Link>
+                    <Link to={getPath(this.props.language + '/blockchain')}>Blockchain</Link>
                     {' | '}
                     <Link onClick={this.logout.bind(this)}>Logout</Link>
                     <br/>

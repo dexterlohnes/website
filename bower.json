@@ -1,0 +1,28 @@
+{
+  "name": "fundrequest",
+  "description": "Funding for open source projects",
+  "main": "",
+  "authors": [
+    "David Hantson <david.hantson@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests",
+    "test-src"
+  ],
+  "dependencies": {
+    "array-find": "^1.0.1",
+    "reset-css": "^2.2.0",
+    "normalize-css": "^7.0.0",
+    "components-font-awesome": "^4.7.0",
+    "compass-sass-mixins": "*",
+    "gridle": "^2.0.48"
+  }
+}
