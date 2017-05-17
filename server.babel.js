@@ -4,7 +4,7 @@ import path from 'path'
 
 import routes from './src/routes'
 import {assetMiddleware, renderHTMLString} from './tools/server-tools'
-import config from './src/config/getConfig'
+import {config} from './src/config/getConfig'
 
 const port = process.env.PORT || 8080
 const app = express()
