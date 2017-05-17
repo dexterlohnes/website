@@ -1,13 +1,19 @@
 import React from 'react'
 import {renderToString} from 'react-dom/server'
 import {match, RouterContext} from 'react-router'
-import {createStore} from 'redux'
+import {createStore, applyMiddleware} from 'redux'
 import {Provider} from 'react-redux'
 import {fetchDataOnServer} from 'redux-fetch-data'
 import {AppContainer} from 'react-hot-loader'
 import reducers from '../src/reducers'
 import createHistory from 'react-router/lib/createMemoryHistory'
+import ConnectedIntlProvider from '../src/modules/common/containers/ConnectedIntlProvider'
+import {config} from '../src/config/getConfig'
+import thunk from 'redux-thunk'
+import setupReact from '../src/setup'
+import {defaultLanguage, polyfillIntl, supportedLanguages} from '../src/modules/common/tools/Internationalization'
 
+polyfillIntl()
 
 let webpackDevServer = {}
 webpackDevServer.hostname = process.env.WP_HOST || 'localhost'
@@ -37,8 +43,20 @@ export const assetMiddleware = () => {
 
 
 export const renderHTMLString = (routes, req, callback) => {
+    setupReact()
     const history = createHistory(req.originalUrl)
-    const store = createStore(reducers)
+    let languageFromBasePath = req.path.replace(config.basePath, '').split('/')[0]
+    if (supportedLanguages.indexOf(languageFromBasePath) === -1)
+        languageFromBasePath = null
+    const requestedLanguage = languageFromBasePath || defaultLanguage
+    const store = createStore(reducers, {
+        global: {
+            locales: {
+                lang: requestedLanguage,
+                messages: require('../src/locales/' + requestedLanguage).default.messages
+            }
+        }
+    }, applyMiddleware(thunk))
 
     match({routes, location: req.url}, (error, redirect, renderProps) => {
         if (error) {
@@ -50,10 +68,25 @@ export const renderHTMLString = (routes, req, callback) => {
                 let content
 
                 try {
+                    let language = renderProps.location.pathname.replace(config.basePath, '').split('/')[0]
+
                     content = renderToString(
                         <AppContainer>
                             <Provider store={store}>
-                                <RouterContext {...renderProps} />
+                                <ConnectedIntlProvider>
+                                    <RouterContext
+                                        {...renderProps}
+                                        createElement={(Component, props) => {
+                                            return (
+                                                <Component
+                                                    {...props}
+                                                    userAgent={req.headers['user-agent']}
+                                                    language={language}
+                                                />
+                                            )
+                                        }}
+                                    />
+                                </ConnectedIntlProvider>
                             </Provider>
                         </AppContainer>
                     )
@@ -62,9 +95,12 @@ export const renderHTMLString = (routes, req, callback) => {
                         data: store.getState()
                     })
                 } catch (err) {
-                    callback({
-                        message: 'something went wrong during render: ' + err
+                    callback(null, null, {
+                        content: null
                     })
+                    // callback({
+                    //     message: 'something went wrong during render: ' + err.stack
+                    // })
                 }
             })
         }

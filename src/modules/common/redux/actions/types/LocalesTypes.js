@@ -1,0 +1,4 @@
+module.exports = {
+    UPDATE_LANGUAGE: 'UPDATE_LANGUAGE',
+    SWITCH_LANGUAGE: 'SWITCH_LANGUAGE'
+}

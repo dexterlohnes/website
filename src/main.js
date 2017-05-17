@@ -2,39 +2,57 @@ require('es6-promise').polyfill()
 
 import React from 'react'
 import {render} from 'react-dom'
-import {hashHistory, browserHistory} from 'react-router'
 import {AppContainer} from 'react-hot-loader'
 import Root from './root'
-import config from '../src/config/getConfig'
+import {config} from '../src/config/getConfig'
 
 import configureStore from './store'
 import {syncHistoryWithStore} from 'react-router-redux'
 import setupReact from './setup'
-require('./favicon.ico'); // Tell webpack to load favicon.ico
+import {Provider} from 'react-redux'
+import ConnectedIntlProvider from './modules/common/containers/ConnectedIntlProvider'
+import {defaultLanguage} from './modules/common/tools/Internationalization'
+import {getHistory} from './modules/common/tools/HistoryTools'
 
 setupReact()
 
-const store = configureStore();
+const history = getHistory()
+const initialPath = history.getCurrentLocation().pathname
+const languageFromHistory = initialPath.replace(config.basePath, '').split('/')[0] || defaultLanguage
+
+const store = configureStore({
+    global: {
+        locales: {
+            lang: languageFromHistory,
+            messages: require('./locales/' + languageFromHistory + '.js').default.messages
+        }
+    }
+})
 
 // Create an enhanced history that syncs navigation events with the store
-const history = syncHistoryWithStore(config.useHashRouting ? hashHistory : browserHistory, store)
+const syncedHistory = syncHistoryWithStore(history, store)
 
 
-render(
+
+const app = (RootComponent) => (
     <AppContainer>
-        <Root store={store} history={history} />
-    </AppContainer>,
-    document.getElementById('app')
-);
+        <Provider store={store}>
+            <ConnectedIntlProvider>
+                <RootComponent history={syncedHistory} store={store}/>
+            </ConnectedIntlProvider>
+        </Provider>
+    </AppContainer>
+)
+const renderComponent = (RootComponent) => {
+    render(app(RootComponent),document.getElementById('app'))
+}
+
+renderComponent(Root)
+
 
 if (module.hot) {
     module.hot.accept('./root', () => {
-        const NewRoot = require('./root').default;
-        render(
-            <AppContainer>
-                <NewRoot store={store} history={history} />
-            </AppContainer>,
-            document.getElementById('app')
-        );
-    });
+        const NewRoot = require('./root').default
+        renderComponent(NewRoot)
+    })
 }

@@ -37,7 +37,7 @@ export default {
             },
             {
                 test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
-                loader: "url-loader?limit=10000&mimetype=application/vnd.ms-fontobject&name=public/fonts/[hash].[ext]"
+                loader: "url-loader?limit=10000&mimetype=application/vnd.ms-fontobject&name=./fonts/[hash].[ext]"
             },
             {
                 test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,

@@ -1,4 +1,4 @@
-import config from '../../../config/getConfig'
+import {config} from '../../../config/getConfig'
 import {default as commonConfig} from '../../../config/common.json'
 import { browserHistory, hashHistory} from 'react-router'
 

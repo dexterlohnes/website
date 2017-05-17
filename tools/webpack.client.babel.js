@@ -4,7 +4,7 @@ import path from 'path'
 import webpackCommonConfig from './webpack.common.babel'
 import loaders from './webpack.loaders.babel'
 import plugins from './webpack.plugins.babel'
-import config from '../src/config/getConfig'
+import {config} from '../src/config/getConfig'
 
 let isProduction = process.env.NODE_ENV === 'production'
 
