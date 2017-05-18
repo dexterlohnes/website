@@ -13,7 +13,7 @@ export default {
             },
             {
                 test: /\.(ico|gif|png|jpg|jpeg|svg|webp)$/,
-                loaders: ["file-loader?context=public&name=/[path][name].[ext]"],
+                loaders: ["file-loader?context=public&name=[path][name].[ext]"],
                 exclude: /node_modules/
             },
             {
