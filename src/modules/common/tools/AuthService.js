@@ -1,7 +1,7 @@
 import React from 'react'
 import Auth0Lock from 'auth0-lock'
 import {config} from '../../../config/getConfig'
-import {pushHistory} from './URLTools'
+import {pushHistory} from './HistoryTools'
 
 let browserStorage = (typeof localStorage === 'undefined') ? null : localStorage
 
