@@ -5,6 +5,8 @@ import {bindActionCreators} from 'redux'
 import {switchLanguage} from '../redux/actions/LocalesActions'
 import {IndexLink, Link} from 'react-router'
 import {pushHistory} from '../tools/HistoryTools'
+import {ButtonTypes} from './Button'
+import Button from './Button'
 
 const mapStateToProps = (state) => {
     return {
@@ -33,18 +35,31 @@ class Header extends Component {
     render() {
         return (
             <div className="header">
-                <img src={getPath('images/app/header-logo.png')} className="header-logo"/>
+                <div className="gr-container">
+                    <div className="row">
+                        <div className="gr-3">
+                            <img src={getPath('images/app/header-logo.png')} className="header-logo"/>
+                        </div>
 
-                <div className="navigation">
-                    <IndexLink to={getPath(this.props.language + '/home')}>Home</IndexLink>
-                    {' | '}
-                    <Link to={getPath(this.props.language + '/about')}>About</Link>
-                    {' | '}
-                    <Link to={getPath(this.props.language + '/login')}>Login</Link>
-                    {' | '}
-                    <Link to={getPath(this.props.language + '/blockchain')}>Blockchain</Link>
-                    {' | '}
-                    <Link onClick={this.logout.bind(this)}>Logout</Link>
+                        <div className="gr-9">
+                            <div className="navigation">
+                                <IndexLink to={getPath(this.props.language + '/home')}>Home</IndexLink>
+                                <Link to={getPath(this.props.language + '/about')}>About</Link>
+                                <Link to={getPath(this.props.language + '/login')}>Login</Link>
+                                <Link to={getPath(this.props.language + '/blockchain')}>Blockchain</Link>
+                                <Link onClick={this.logout.bind(this)}>Logout</Link>
+                                <Button text={'app.header.sign-up'}
+                                        onClick={() => {}}
+                                        className={'sign-up-button'}
+                                />
+                                <Button text={'app.header.crowdsale'}
+                                        onClick={() => {}}
+                                        styleType={ButtonTypes.SECONDARY}
+                                        className={'crowdsale-button'}
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         )

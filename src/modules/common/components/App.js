@@ -6,24 +6,28 @@ import {bindActionCreators} from 'redux'
 import {getMuiTheme} from 'material-ui/styles/index'
 import {MuiThemeProvider} from 'material-ui'
 import Header from './Header'
+import injectTapEventPlugin from 'react-tap-event-plugin'
+injectTapEventPlugin()
 
-let muiTheme = getMuiTheme({
-    // userAgent : 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
-    // palette: {
-    //     primary1Color: 'red',
-    //     primary2Color: 'blue'
-    // },
-    // radioButton: {
-    //     borderColor: 'lightred',
-        // backgroundColor: palette.alternateTextColor,
-        // checkedColor: palette.primary1Color,
-        // requiredColor: palette.primary1Color,
-        // disabledColor: palette.disabledColor,
-        // size: 24,
-        // labelColor: palette.textColor,
-        // labelDisabledColor: palette.disabledColor,
-    // }
-});
+const getTheme = ({ userAgent }) => {
+    return getMuiTheme({
+        userAgent : userAgent,
+        palette: {
+            primary1Color: '#03a9f4',
+            primary2Color: '#ffab00'
+        },
+        radioButton: {
+            // borderColor: '#98999e',
+            // backgroundColor: palette.alternateTextColor,
+            // checkedColor: palette.primary1Color,
+            // requiredColor: palette.primary1Color,
+            // disabledColor: palette.disabledColor,
+            // size: 24,
+            // labelColor: palette.textColor,
+            // labelDisabledColor: palette.disabledColor,
+        }
+    });
+}
 
 const mapStateToProps = (state) => {
     return {
@@ -49,6 +53,8 @@ class App extends React.Component {
                 auth: this.props.route.auth //sends auth instance from route to children
             })
         }
+
+        let muiTheme = getTheme({ userAgent: this.props.userAgent})
 
         return (
             <MuiThemeProvider muiTheme={muiTheme}>
