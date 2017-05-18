@@ -23,5 +23,6 @@ local
 dist
 public/js
 public/css
+public/bower_components
 
 .nyc_output
