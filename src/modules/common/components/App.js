@@ -59,7 +59,7 @@ class App extends React.Component {
         return (
             <MuiThemeProvider muiTheme={muiTheme}>
                 <div className="main-container">
-                    <Header />
+                    <Header auth={this.props.route.auth}/>
                     {children}
                 </div>
             </MuiThemeProvider>

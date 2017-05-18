@@ -1,5 +1,4 @@
 import React from 'react'
-import SectionHeader from './SectionHeader'
 import Introduction from './Introduction'
 import Steps from './Steps'
 import Values from './Values'
