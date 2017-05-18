@@ -1,23 +1,18 @@
 import React from 'react'
-import noop from '../../common/tools/noop'
+import Introduction from './Introduction'
+import Steps from './Steps'
+import Values from './Values'
+import Goals from './Goals'
+import Team from './Team'
 
-const HomePage = ({
-                      storageValue,
-                      inputValue,
-                      onChangeInputValue = noop,
-                      setStorageValue = noop,
-                      onConnect = noop,
-                      token = ''
-                  }) => {
+const HomePage = ({}) => {
     return (
-        <div>
-            <h1>Home</h1>
-            Dont forget to connect
-            <p>The stored value is: {storageValue}</p>
-            <input type="text" value={inputValue} onChange={onChangeInputValue}/>
-            <button onClick={setStorageValue.bind(this,inputValue)}>Set Value</button>
-            <button onClick={onConnect}>Connect</button>
-            <p>Token: {token}</p>
+        <div className="home">
+            <Introduction />
+            <Steps />
+            <Values />
+            <Goals />
+            <Team />
         </div>
     )
 }
