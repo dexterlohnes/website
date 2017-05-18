@@ -14,9 +14,11 @@ import {defaultLanguage, supportedLanguages} from './modules/common/tools/Intern
 const auth = new AuthService('wdg51OXdRDPG6kEWe1Hp1xgdGZDWIn6e', 'fundrequest.eu.auth0.com')
 
 // validate authentication for private routes
-const requireAuth = (nextState, replace) => {
-    if (!auth.loggedIn()) {
-        replace({ pathname: '/login' })
+const requireAuth = (language) => {
+    return (nextState, replace) => {
+        if (!auth.loggedIn()) {
+            replace({ pathname: '/' + language + '/login' })
+        }
     }
 }
 
@@ -24,8 +26,8 @@ const translatedRoutes = (language) => (
     <Route path={language + '/'} key={language}>
         <IndexRedirect to={'home'}/>
         <Route path="login" component={LoginPageContainer} />
-        <Route path="home" component={HomePageContainer} onEnter={requireAuth}/>
-        <Route path="about" component={AboutPage} onEnter={requireAuth}/>
+        <Route path="home" component={HomePageContainer} />
+        <Route path="about" component={AboutPage} onEnter={requireAuth(language)}/>
         <Route path="blockchain" component={BlockchainContainer}/>
     </Route>
 )

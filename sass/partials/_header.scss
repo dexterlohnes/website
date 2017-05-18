@@ -1,3 +1,28 @@
-.header {
+$headerHeight: 75px;
+$headerPadding: 30px;
+$headerLogoHeight: 24px;
 
+.header {
+  height: $headerHeight;
+  line-height: $headerHeight;
+  width: 100%;
+  background-color: rgba(255,255,255,0.6);
+  border-bottom: 1px solid $colorPrimary;
+
+  .header-logo {
+    height: $headerLogoHeight;
+    vertical-align: middle;
+    margin-left: $headerPadding;
+  }
+
+  .navigation {
+    text-align: right;
+    margin-right: $headerPadding;
+
+    a {
+      color: $colorNavigationLinks;
+      text-decoration: inherit;
+      margin-right: 20px;
+    }
+  }
 }
