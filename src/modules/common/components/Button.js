@@ -1,4 +1,5 @@
-import React, {PropTypes} from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import noop from '../tools/noop'
 import {FlatButton} from 'material-ui'
 import {injectIntl} from 'react-intl'
@@ -35,8 +36,8 @@ const buttonStyleSecondary = {
 
 const buttonStyleHot = {
     ...buttonStyleCommon,
-    height: '34px',
-    lineHeight: '30px',
+    height: '38px',
+    lineHeight: '34px',
     backgroundColor: '#ffab00',
     borderColor: '#ffab00',
     color: '#fff'

@@ -1,4 +1,5 @@
-import React, {PropTypes, Component} from 'react'
+import React, {Component} from 'react'
+import PropTypes from 'prop-types'
 import {getPath} from '../tools/URLTools'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
@@ -26,10 +27,8 @@ const mapDispatchToProps = (dispatch) => {
 )
 class Header extends Component {
     logout() {
-        // destroys the session data
-        this.props.route.auth.logout()
-        // redirects to login page
-        pushHistory(getPath('login'))
+        this.props.auth.logout()
+        pushHistory(getPath(this.props.language + '/login'))
     }
 
     render() {

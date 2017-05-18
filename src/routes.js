@@ -22,6 +22,16 @@ const requireAuth = (language) => {
     }
 }
 
+const useDefaultLanguage = () => {
+    return (nextState, replace) => {
+        let pathname = nextState.location.pathname
+
+        if (supportedLanguages.indexOf(pathname.split('/')[1]) === -1) {
+            replace({ pathname: '/' + defaultLanguage + pathname })
+        }
+    }
+}
+
 const translatedRoutes = (language) => (
     <Route path={language + '/'} key={language}>
         <IndexRedirect to={'home'}/>
@@ -36,7 +46,7 @@ const routes = (
     <Route path={config.basePath} component={App} auth={auth}>
         <IndexRedirect to={defaultLanguage + '/home'}/>
         {supportedLanguages.map(language => translatedRoutes(language))}
-        <Route path="*" component={NotFoundPage}/>
+        <Route path="*" component={NotFoundPage} onEnter={useDefaultLanguage()}/>
     </Route>
 )
 
