@@ -14,9 +14,21 @@ import {defaultLanguage, supportedLanguages} from './modules/common/tools/Intern
 const auth = new AuthService('wdg51OXdRDPG6kEWe1Hp1xgdGZDWIn6e', 'fundrequest.eu.auth0.com')
 
 // validate authentication for private routes
-const requireAuth = (nextState, replace) => {
-    if (!auth.loggedIn()) {
-        replace({ pathname: '/login' })
+const requireAuth = (language) => {
+    return (nextState, replace) => {
+        if (!auth.loggedIn()) {
+            replace({ pathname: '/' + language + '/login' })
+        }
+    }
+}
+
+const useDefaultLanguage = () => {
+    return (nextState, replace) => {
+        let pathname = nextState.location.pathname
+
+        if (supportedLanguages.indexOf(pathname.split('/')[1]) === -1) {
+            replace({ pathname: '/' + defaultLanguage + pathname })
+        }
     }
 }
 
@@ -24,8 +36,8 @@ const translatedRoutes = (language) => (
     <Route path={language + '/'} key={language}>
         <IndexRedirect to={'home'}/>
         <Route path="login" component={LoginPageContainer} />
-        <Route path="home" component={HomePageContainer} onEnter={requireAuth}/>
-        <Route path="about" component={AboutPage} onEnter={requireAuth}/>
+        <Route path="home" component={HomePageContainer} />
+        <Route path="about" component={AboutPage} onEnter={requireAuth(language)}/>
         <Route path="blockchain" component={BlockchainContainer}/>
     </Route>
 )
@@ -34,7 +46,7 @@ const routes = (
     <Route path={config.basePath} component={App} auth={auth}>
         <IndexRedirect to={defaultLanguage + '/home'}/>
         {supportedLanguages.map(language => translatedRoutes(language))}
-        <Route path="*" component={NotFoundPage}/>
+        <Route path="*" component={NotFoundPage} onEnter={useDefaultLanguage()}/>
     </Route>
 )
 

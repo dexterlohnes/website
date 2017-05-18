@@ -1,2 +1,15 @@
-@import "partials/page";
+@import "grid";
 
+@import "plugins";
+//@import "mixins";
+//@import "variables";
+@import "colors";
+
+/* Partials */
+@import "partials/page";
+@import "partials/header";
+
+/* Page styles */
+/* Component styles */
+@import "components/home";
+@import "components/section-header";

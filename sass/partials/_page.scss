@@ -1,3 +1,25 @@
+@import "../fonts/Montserrat/Montserrat";
+
 body {
-  background-color: lightgrey;
+  @extend .montserrat;
+  color: #000;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+html{
+  min-height: 100%;
+  background: #fff url('../public/images/app/page-background-2x.jpg') no-repeat center top;
+}
+
+body,
+#app,
+.main-container {
+  height: 100%;
+}
+
+@media screen and (min-width: 3000px) {
+  html {
+    background-size: cover;
+  }
 }

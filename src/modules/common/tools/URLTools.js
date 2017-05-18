@@ -76,10 +76,3 @@ export function getPath() {
 
     return config.basePath + path
 }
-
-export const pushHistory = (path) => {
-    if (config.useHashRouting)
-        hashHistory.push(path)
-    else
-        browserHistory.push(path)
-}
