@@ -19,6 +19,7 @@ npm-debug.log
 .idea
 
 tmp
+.tmp
 local
 dist
 public/js
