@@ -8,7 +8,10 @@ export default class AuthService {
         this.lock = new Auth0Lock(clientId, domain, {
             auth: {
                 redirectUrl: 'http://localhost:8080/login',
-                responseType: 'token'
+                responseType: 'token',
+                params: {
+                    scope: 'openid roles user_id name email'
+                }
             }
         })
         // Add callback for lock `authenticated` event
