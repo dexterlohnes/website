@@ -42,13 +42,10 @@ class Header extends Component {
 
                         <div className="gr-9">
                             <div className="navigation">
-                                <IndexLink to={getPath(this.props.language + '/home')}>Home</IndexLink>
-                                <Link to={getPath(this.props.language + '/about')}>Platform</Link>
-                                <Link to={getPath(this.props.language + '/login')}>Roadmap</Link>
-                                <Link to='https://blog.fundrequest.io'>Blog</Link>
-                                <Link to={getPath(this.props.language + '/about')}>About Us</Link>
-                                <Link to={getPath(this.props.language + '/login')}>Login</Link>
-                                <Link onClick={this.logout.bind(this)}>Logout</Link>
+                                <IndexLink to={getPath(this.props.language + '/home')}>Platform</IndexLink>
+                                <Link to={getPath(this.props.language + '/roadmap')}>Roadmap</Link>
+                                <Link to="https://blog.fundrequest.io">Blog</Link>
+                                <Link to="">About Us</Link>
                                 <Button text={'app.header.sign-up'}
                                         onClick={() => {}}
                                         className={'sign-up-button'}

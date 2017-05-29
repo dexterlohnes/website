@@ -2,7 +2,7 @@ import React from 'react'
 import {IndexRedirect, Route} from 'react-router'
 
 import App from './modules/common/components/App'
-import AboutPage from './modules/common/components/AboutPage'
+import RoadmapPage from './modules/common/components/RoadmapPage'
 import NotFoundPage from './modules/common/components/NotFoundPage'
 import HomePageContainer from './modules/home/containers/HomePageContainer'
 import AuthService from './modules/common/tools/AuthService'
@@ -37,8 +37,8 @@ const translatedRoutes = (language) => (
         <IndexRedirect to={'home'}/>
         <Route path="login" component={LoginPageContainer} />
         <Route path="home" component={HomePageContainer} />
-        <Route path="about" component={AboutPage} onEnter={requireAuth(language)}/>
-        <Route path="blockchain" component={BlockchainContainer}/>
+        <Route path="roadmap" component={RoadmapPage}/>
+        <Route path="blockchain" component={BlockchainContainer} onEnter={requireAuth(language)}/>
     </Route>
 )
 
