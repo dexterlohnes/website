@@ -26,6 +26,14 @@ const Introduction = ({}) => {
                                     className={'crowdsale-button'}
                             />
                             <br/>
+                            <FormattedMessage
+                                id="app.home.introduction.already-joined"
+                                tagName={'h5'}
+                            /> 
+                            <FormattedMessage
+                                id="app.home.introduction.sign-in"
+                                tagName={'h5'}
+                            />
                         </div>
                     </div>
                 </div>
