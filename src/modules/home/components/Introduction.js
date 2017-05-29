@@ -30,12 +30,9 @@ const Introduction = ({language}) => {
                             />
                             <br/>
                             <br/>
-
-
                             <div>
                                 <span className="already-joined">
                                     <FormattedMessage
-                                        className="already-joined"
                                         id="app.home.introduction.already-joined"
                                         tagName={'span'}
                                     />
