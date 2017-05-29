@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SectionHeader from './SectionHeader'
-import {Icon} from '../../common/components/Icons'
-import {FormattedMessage} from 'react-intl'
 import WizardStep from './WizardStep'
 
 

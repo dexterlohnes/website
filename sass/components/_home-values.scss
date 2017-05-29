@@ -1,0 +1,23 @@
+$stakeHolderWidth: 280px;
+
+.home .values {
+  height: 550px;
+  background-color: rgba(255,255,255,0.7);
+
+  .stakeholder {
+    width: $stakeHolderWidth;
+    display: inline-block;
+    margin-bottom: 30px;
+
+    h3 {
+      color: $colorSecondary;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      text-align: left;
+      line-height: 18px;
+    }
+  }
+}
