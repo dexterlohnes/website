@@ -1,0 +1,26 @@
+.home .steps {
+  height: 450px;
+  background-color: rgba(255,255,255,0.4);
+
+  .wizard-step {
+    text-align: center;
+    font-size: 16px;
+    display: inline-block;
+    margin: 0 1px;
+
+    .circle {
+      color: $colorSecondary;
+      margin: 0 3px;
+    }
+    .dashed-line {
+      border-bottom: 2px dotted #98999e;
+      width: 80px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .highlighted {
+      color: $colorSecondary;
+    }
+  }
+}

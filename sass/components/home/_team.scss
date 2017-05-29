@@ -1,0 +1,30 @@
+.home .team {
+  height: 950px;
+  background-color: #ffffff;
+
+  .member {
+    width: 400px;
+    max-width: 100%;
+    display: inline-block;
+    margin-bottom: 30px;
+
+    .avatar {
+      width: 55%;
+      border-radius: 50%;
+    }
+
+    .name {
+      font-size: 22px;
+      margin-top: 15px;
+    }
+
+    h4 {
+      margin-bottom: 15px;
+    }
+
+    p {
+      text-align: left;
+      line-height: 18px;
+    }
+  }
+}

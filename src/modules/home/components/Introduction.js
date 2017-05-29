@@ -2,8 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {FormattedMessage} from 'react-intl'
 import Button, {ButtonTypes} from '../../common/components/Button'
+import {Link} from 'react-router'
+import {defaultLanguage} from '../../common/tools/Internationalization'
+import {getPath} from '../../common/tools/URLTools'
 
-const Introduction = ({}) => {
+const Introduction = ({language}) => {
     return (
         <div className="introduction section">
             <div className="content">
@@ -26,14 +29,21 @@ const Introduction = ({}) => {
                                     className={'crowdsale-button'}
                             />
                             <br/>
-                            <FormattedMessage
-                                id="app.home.introduction.already-joined"
-                                tagName={'h5'}
-                            /> 
-                            <FormattedMessage
-                                id="app.home.introduction.sign-in"
-                                tagName={'h5'}
-                            />
+                            <br/>
+                            <div>
+                                <span className="already-joined">
+                                    <FormattedMessage
+                                        id="app.home.introduction.already-joined"
+                                        tagName={'span'}
+                                    />
+                                </span>
+                                <Link className="sign-in-hyperlink" to={getPath(language + '/sign-in')}>
+                                    <FormattedMessage
+                                        id="app.home.introduction.sign-in"
+                                        tagName={'span'}
+                                    />
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>

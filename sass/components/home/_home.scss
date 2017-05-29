@@ -1,0 +1,15 @@
+.home {
+  .section {
+    display: table;
+    width: 100%;
+
+    .content {
+      display: table-cell;
+      vertical-align: middle;
+
+      .gr-container {
+        max-width: 960px;
+      }
+    }
+  }
+}

@@ -11,5 +11,10 @@
 
 /* Page styles */
 /* Component styles */
-@import "components/home";
+@import "components/home/home";
+@import "components/home/introduction";
+@import "components/home/steps";
+@import "components/home/values";
+@import "components/home/goals";
+@import "components/home/team";
 @import "components/section-header";
