@@ -44,7 +44,7 @@ class Header extends Component {
                             <div className="navigation">
                                 <IndexLink to={getPath(this.props.language + '/home')}>Platform</IndexLink>
                                 <Link to={getPath(this.props.language + '/roadmap')}>Roadmap</Link>
-                                <Link to="https://blog.fundrequest.io">Blog</Link>
+                                <a href="https://blog.fundrequest.io">Blog</a>
                                 <Link to="">About Us</Link>
                                 <Button text={'app.header.sign-up'}
                                         onClick={() => {}}
