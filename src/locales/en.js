@@ -45,6 +45,18 @@ export default {
         'app.home.goals.trust.title': 'Trust & Security',
         'app.home.goals.trust.text': 'By using the Ethereum blockchain and open source Smart contracts, trust and security are assured',
 
-        'app.home.team.title': 'About us'
+        'app.home.team.title': 'Team',
+        'app.home.team.karel.title': 'Founder',
+        'app.home.team.karel.text': 'Karel has new ideas and solutions and shares them openly. He gets things done while bringing enthusiasm to the cause.',
+
+        'app.home.team.tim.title': 'Analyst',
+        'app.home.team.tim.text': 'Tim is always interested in the ideas shared by others and connects people to work on them. He thinks like a customer and builds strategic models to determine the business viability of the idea.',
+
+        'app.home.team.davy.title': 'Developer',
+        'app.home.team.davy.text': 'Davy builds on existing ideas and makes them better. He solves the toughest problems and gets things done. Davy leads the backend development.',
+
+        'app.home.team.david.title': 'Developer',
+        'app.home.team.david.text': 'Builds on existing ideas and makes them better. He solves the toughest problems and gets things done. Davy leads the frontend development.'
+
     }
 }
