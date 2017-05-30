@@ -16,6 +16,7 @@ const Steps = ({}) => {
                             />
                             <br/>
                             <br/>
+                            <br/>
                             <WizardStep
                                 title="app.home.steps.download"
                                 subtitle="app.home.steps.plugin"
