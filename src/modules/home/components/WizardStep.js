@@ -15,14 +15,14 @@ const WizardStep = ({
                 <span className="dashed-line"/>
             </div>
             <br/>
-
-            <div className="highlighted">
+            <br/>
+            <div className="title">
                 <FormattedMessage
                     id={title}
                     tagName={'div'}
                 />
             </div>
-            <div>
+            <div className="subtitle">
                 <FormattedMessage
                     id={subtitle}
                     tagName={'div'}

@@ -9,18 +9,21 @@
     margin: 0 1px;
 
     .circle {
-      color: $colorSecondary;
+      color: $colorSecondarySoft;
       margin: 0 3px;
     }
     .dashed-line {
-      border-bottom: 2px dotted #98999e;
+      border-bottom: 2px dotted #aeafb4;
       width: 80px;
       display: inline-block;
       vertical-align: middle;
     }
 
-    .highlighted {
-      color: $colorSecondary;
+    .title {
+      color: $colorSecondarySoft;
+    }
+    .subtitle {
+      color: #000000;
     }
   }
 }
