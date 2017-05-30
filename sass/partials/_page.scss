@@ -2,7 +2,7 @@
 
 body {
   @extend .montserrat;
-  color: #000;
+  color: $colorText;
   font-size: 14px;
   line-height: 22px;
 }
