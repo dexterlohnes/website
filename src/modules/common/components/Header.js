@@ -37,7 +37,9 @@ class Header extends Component {
                 <div className="gr-container">
                     <div className="row">
                         <div className="gr-3">
-                            <img src={getPath('images/app/header-logo.png')} className="header-logo"/>
+                            <Link to={getPath(this.props.language + '/home')}>
+                                <img src={getPath('images/app/header-logo.png')} className="header-logo"/>
+                            </Link>
                         </div>
 
                         <div className="gr-9">

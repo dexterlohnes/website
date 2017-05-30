@@ -9,6 +9,10 @@ $headerLogoHeight: 24px;
   background-color: rgba(255,255,255,0.6);
   border-bottom: 1px solid $colorPrimary;
 
+  .gr-container {
+    max-width: 1140px;
+  }
+
   .header-logo {
     height: $headerLogoHeight;
     vertical-align: middle;
