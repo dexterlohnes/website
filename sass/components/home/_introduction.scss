@@ -1,3 +1,5 @@
+$colorHomeIntroductionTextLight: #707070;
+
 .home .introduction {
   height: 635px;
   width: 100%;
@@ -8,13 +10,22 @@
 
   h3 {
     font-size: 16px;
+    color: $colorHomeIntroductionTextLight;
   }
 
   .already-joined {
     font-size: 14px;
     margin-right: 10px;
+    color: $colorHomeIntroductionTextLight;
   }
   .sign-in-hyperlink {
     font-size: 14px;
+
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: $colorHomeIntroductionTextLight;
+    }
   }
 }
