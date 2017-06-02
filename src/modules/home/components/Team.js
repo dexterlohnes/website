@@ -53,6 +53,14 @@ const Team = ({}) => {
                                 text={'app.home.team.david.text'}
                             />
                         </div>
+                        <div className="gr-6 center">
+                            <Member
+                                avatar={getPath('images/app/home/quinten-de-swaef.jpg')}
+                                name={'Quinten De Swaef'}
+                                title={'app.home.team.quinten.title'}
+                                text={'app.home.team.quinten.text'}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
