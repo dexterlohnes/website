@@ -59,6 +59,6 @@ export default {
         'app.home.team.david.text': 'David, a.k.a The Wizard, is in charge of leading the frontend development which includes protecting the usability and user-friendliness.',
 	
         'app.home.team.quinten.title': 'Developer',
-        'app.home.team.quinten.text': 'Quinten support Davy in the backend development and is doing the first security audits of the platform.'
+        'app.home.team.quinten.text': 'Quinten supports Davy with the backend development and is performing the first security audits of the platform.'
     }
 }
