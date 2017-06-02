@@ -3,14 +3,14 @@ export default {
     messages: {
         'app.fr.welcome': 'Welcome',
 
-        'app.header.sign-up': 'Get Invite',
+        'app.header.sign-up': 'Get Invited',
         'app.header.crowdsale': 'Crowdsale',
 
         'app.home.introduction.title': 'Funding and rewarding open source development',
         'app.home.introduction.intro': 'FundRequest makes it easy to fund open issues on any project, in any language',
-        'app.home.introduction.get-started': 'Coming Soon!',
-        'app.home.introduction.already-joined': 'Already joined Fundrequest?',
-        'app.home.introduction.sign-in': 'Get invite',
+        'app.home.introduction.get-started': 'Coming Soon !',
+        'app.home.introduction.already-joined': 'Already joined Fundrequest Slack Channel?',
+        'app.home.introduction.sign-in': 'Get invited',
 
         'app.home.steps.title': 'Getting Started Takes 5 Minutes',
         'app.home.steps.download': 'Download',
