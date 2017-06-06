@@ -1,0 +1,35 @@
+$mileStoneWidth: 220px;
+
+.home .roadmap {
+  height: 450px;
+  background-color: rgba(255,255,255,0.4);
+
+  .milestone-step {
+    width: $mileStoneWidth;
+    max-width: 100%;
+    display: inline-block;
+    margin: 0 0 0 0;
+    vertical-align: top;
+
+    .circle {
+      color: $colorSecondarySoft;
+      margin: 0 3px;
+    }
+    .dashed-line {
+      border-bottom: 2px dotted #aeafb4;
+      width: 45%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .title {
+      color: $colorSecondarySoft;
+      text-align: center;
+      font-size: 16px;
+    }
+    .subtitle {
+      color: #000000;
+      padding: 10px;
+    }
+  }
+}

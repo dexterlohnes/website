@@ -45,6 +45,16 @@ export default {
         'app.home.goals.trust.title': 'Trust & Security',
         'app.home.goals.trust.text': 'By using the Ethereum blockchain and open source Smart contracts, trust and security are assured',
 
+        'app.home.roadmap.title': 'Roadmap',
+        'app.home.roadmap.phase1.title': 'Pilot',
+        'app.home.roadmap.phase1.text': 'A Proof of Concept to measure adoption and gather feedback (available on the Ethereum testnet)',
+        'app.home.roadmap.phase2.title': 'Build',
+        'app.home.roadmap.phase2.text': ' A platform to fund open source software on github',
+        'app.home.roadmap.phase3.title': 'Integrate & Grow',
+        'app.home.roadmap.phase3.text': ' Seamless integration. Add funds to issues directly on your favorite platform(s)',
+        'app.home.roadmap.phase4.title': 'Pivot & Expand',
+        'app.home.roadmap.phase4.text': 'Tired of issues? Fund a project, competition or a bug bounty programme',
+
         'app.home.team.title': 'About Us',
         'app.home.team.karel.title': 'Founder',
         'app.home.team.karel.text': 'Karel has new ideas and solutions and shares them openly. He gets things done while bringing enthusiasm to the cause.',
