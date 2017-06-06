@@ -3,6 +3,7 @@ import Introduction from './Introduction'
 import Steps from './Steps'
 import Values from './Values'
 import Goals from './Goals'
+import Roadmap from './Roadmap'
 import Team from './Team'
 import {defaultLanguage} from '../../common/tools/Internationalization'
 
@@ -15,6 +16,7 @@ const HomePage = ({ language = defaultLanguage }) => {
             <Steps />
             <Values />
             <Goals />
+            <Roadmap />
             <Team />
         </div>
     )
