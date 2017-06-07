@@ -56,6 +56,9 @@ export default {
         'app.home.roadmap.phase4.text': 'Tired of issues? Fund a project, competition or a bug bounty programme',
 
         'app.home.team.title': 'About Us',
+        'app.home.team.core.title': 'Core',
+        'app.home.team.advisors.title': 'Advisors',
+
         'app.home.team.karel.title': 'Founder',
         'app.home.team.karel.text': 'Karel has new ideas and solutions and shares them openly. He gets things done while bringing enthusiasm to the cause.',
 
@@ -72,6 +75,15 @@ export default {
         'app.home.team.quinten.text': 'Quinten supports Davy with the backend development and is performing the first security audits of the platform.',
 
         'app.home.team.tom.title': 'Infrastructure',
-        'app.home.team.tom.text': 'Tom is a certified Linux Tier2 Architect and is in charge of defining and setting up all building blocked needed for development, hosting and running the platform.'
+        'app.home.team.tom.text': 'Tom is a certified Linux Tier2 Architect and is in charge of defining and setting up all building blocked needed for development, hosting and running the platform.',
+
+        'app.home.team.thomas.title': 'Finance Advisor',
+        'app.home.team.thomas.text': 'Thomas conducts academic research in the field of banking and corporate finance. With his affinity for numbers and critical mind, he is always eager to share his views on the financial model of FundRequest.',
+
+        'app.home.team.dndfisc.title': 'Finance Advisors',
+        'app.home.team.dndfisc.text': 'Accounting & fiscal engineering firm, experienced in all aspects of a startup. They provide expert advice not only financially but also on business and marketing plans. The team has been working with them for more then four years now.',
+
+        'app.home.team.portelio.title': 'Legal Advisors',
+        'app.home.team.portelio.text': 'Portelio is an independent Belgian law firm, specialized in business law, corporate law and intellectual property rights. They advise FundRequest in all legal matters.'
     }
 }
