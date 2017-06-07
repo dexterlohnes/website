@@ -5,6 +5,14 @@
 
     .content {
       display: table-cell;
+
+      .gr-container {
+        max-width: 960px;
+      }
+    }
+
+    .content-middle {
+      display: table-cell;
       vertical-align: middle;
 
       .gr-container {

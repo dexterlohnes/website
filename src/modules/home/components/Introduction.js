@@ -9,7 +9,7 @@ import {getPath} from '../../common/tools/URLTools'
 const Introduction = ({language}) => {
     return (
         <div className="introduction section">
-            <div className="content">
+            <div className="content-middle">
                 <div className="gr-container">
                     <div className="row">
                         <div className="gr-12 center">
