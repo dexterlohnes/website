@@ -1,0 +1,19 @@
+.section-subheader {
+  text-align: left;
+  display: block;
+  margin-top : 20px;
+
+
+  h3 {
+    color: $colorSecondary;
+    font-size: 18px;
+  }
+
+  .underline {
+    width: 100px;
+    height: 2px;
+    background-color: $colorSecondary;
+    display: inline-block;
+    vertical-align: top;
+  }
+}

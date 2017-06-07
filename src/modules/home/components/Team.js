@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SectionHeader from './SectionHeader'
+import SectionSubHeader from './SectionSubHeader'
 import Member from './Member'
 import {getPath} from '../../common/tools/URLTools'
 
@@ -13,6 +14,14 @@ const Team = ({}) => {
                         <div className="gr-12 center">
                             <SectionHeader
                                 title={'app.home.team.title'}
+                            />
+                        </div>
+                    </div>
+                    <br/>
+                    <div className="row">
+                        <div className="gr-12 center">
+                            <SectionSubHeader
+                                title={'app.home.team.core.title'}
                             />
                         </div>
                     </div>
@@ -67,6 +76,42 @@ const Team = ({}) => {
                                 name={'Tom Degroote'}
                                 title={'app.home.team.tom.title'}
                                 text={'app.home.team.tom.text'}
+                            />
+                        </div>
+                    </div>
+                    <br/>
+                    <div className="row">
+                        <div className="gr-12 center">
+                            <SectionSubHeader
+                                title={'app.home.team.advisors.title'}
+                            />
+                        </div>
+                    </div>
+                    <br/>
+                    <br/>
+                    <div className="row">
+                        <div className="gr-4 center">
+                            <Member
+                                avatar={getPath('images/app/home/thomas-matthys-avatar.jpg')}
+                                name={'Thomas Matthys'}
+                                title={'app.home.team.thomas.title'}
+                                text={'app.home.team.thomas.text'}
+                            />
+                        </div>
+                        <div className="gr-4 center">
+                            <Member
+                                avatar={getPath('images/app/home/dndfisc-avatar.jpg')}
+                                name={'D&D Fisc'}
+                                title={'app.home.team.dndfisc.title'}
+                                text={'app.home.team.dndfisc.text'}
+                            />
+                        </div>
+                        <div className="gr-4 center">
+                            <Member
+                                avatar={getPath('images/app/home/portelio-avatar.jpg')}
+                                name={'Portelio'}
+                                title={'app.home.team.portelio.title'}
+                                text={'app.home.team.portelio.text'}
                             />
                         </div>
                     </div>
