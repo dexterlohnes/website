@@ -1,5 +1,6 @@
 import React from 'react'
 import Introduction from './Introduction'
+import WhatIs from './WhatIs'
 import Steps from './Steps'
 import Values from './Values'
 import Goals from './Goals'
@@ -13,6 +14,7 @@ const HomePage = ({ language = defaultLanguage }) => {
             <Introduction
                 language={language}
             />
+            <WhatIs />
             <Steps />
             <Values />
             <Goals />

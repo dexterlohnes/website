@@ -6,6 +6,7 @@ import {bindActionCreators} from 'redux'
 import {getMuiTheme} from 'material-ui/styles/index'
 import {MuiThemeProvider} from 'material-ui'
 import Header from './Header'
+import Footer from './Footer'
 import injectTapEventPlugin from 'react-tap-event-plugin'
 injectTapEventPlugin()
 
@@ -61,6 +62,7 @@ class App extends React.Component {
                 <div className="main-container">
                     <Header auth={this.props.route.auth}/>
                     {children}
+                    <Footer/>
                 </div>
             </MuiThemeProvider>
         )

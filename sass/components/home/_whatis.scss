@@ -1,15 +1,12 @@
-$mileStoneWidth: 220px;
+.home .whatis {
+  height: 350px;
+  background-color: rgba(255,255,255,0.6);
 
-.home .roadmap {
-  height: 530px;
-  background-color: rgba(255,255,255,0.4);
-
-  .milestone-step {
-    width: $mileStoneWidth;
-    max-width: 100%;
+  .description {
+    text-align: center;
+    font-size: 16px;
     display: inline-block;
-    margin: 0 0 0 0;
-    vertical-align: top;
+    margin: 0 1px;
 
     .circle {
       color: $colorSecondarySoft;
@@ -17,19 +14,16 @@ $mileStoneWidth: 220px;
     }
     .dashed-line {
       border-bottom: 2px dotted #aeafb4;
-      width: 45%;
+      width: 80px;
       display: inline-block;
       vertical-align: middle;
     }
 
     .title {
       color: $colorSecondarySoft;
-      text-align: center;
-      font-size: 16px;
     }
     .subtitle {
       color: #000000;
-      padding: 10px;
     }
   }
 }
