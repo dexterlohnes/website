@@ -12,6 +12,8 @@ export default {
         'app.home.introduction.already-joined': 'Already joined Fundrequest Slack Channel?',
         'app.home.introduction.sign-in': 'Get invited',
 
+        'app.home.whatis.title': 'What is FundRequest?',
+
         'app.home.steps.title': 'Getting Started Takes 5 Minutes',
         'app.home.steps.download': 'Download',
         'app.home.steps.plugin': 'plugin',
