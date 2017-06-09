@@ -44,10 +44,10 @@ class Header extends Component {
 
                         <div className="gr-9">
                             <div className="navigation">
-                                <IndexLink to={getPath(this.props.language + '/home')}>Platform</IndexLink>
                                 <Link to={getPath(this.props.language + '/roadmap')}>Roadmap</Link>
-				<a href="https://fundrequest.io/whitepaper.pdf">Whitepaper</a>
-                                <a href="https://blog.fundrequest.io">Blog</a>
+				                <a href="https://fundrequest.io/whitepaper.pdf"  target="_blank">Whitepaper</a>
+                                <a href="https://blog.fundrequest.io" target="_blank">Blog</a>
+                                <a href="https://docs.fundrequest.io/display/PUB/" target="_blank">Docs</a>
                                 <Link to="">About Us</Link>
                                 <Button text={'app.header.sign-up'}
                                         onClick={() => {}}
