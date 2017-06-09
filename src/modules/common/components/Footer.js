@@ -46,16 +46,43 @@ class Footer extends Component {
                             © 2017 FundRequest. All rights reserved.
                             </div>
                             <div className="social-container">
-                                <a href="" target="_blank"><Icon name="twitter" size="lg"/></a>
-                                <a href="" target="_blank"><Icon name="medium" size="lg"/></a>
-                                <a href="" target="_blank"><Icon name="github" size="lg"/></a>
-                                <a href="" target="_blank"><Icon name="slack" size="lg"/></a>
-                                <a href="" target="_blank"><Icon name="globe" size="lg"/></a>
+                                <a href="https://twitter.com/fundrequest_io" target="_blank"><Icon name="twitter" size="lg"/></a>
+                                <a href="https://blog.fundrequest.io" target="_blank"><Icon name="medium" size="lg"/></a>
+                                <a href="https://github.com/fundrequest/" target="_blank"><Icon name="github" size="lg"/></a>
+                                <a href="fundrequest.slack.com" target="_blank"><Icon name="slack" size="lg"/></a>
+                                <a href="https://fundrequest.io" target="_blank"><Icon name="globe" size="lg"/></a>
                             </div>
                         </div>
-                        <div className="gr-6">
-                            <div className="slogan">
-                                
+                        <div className="gr-2">
+                            <div className="footer-section">
+                                <div className="title">
+                                Resources
+                                </div>
+                                <div className="content">
+                                <a href="https://fundrequest.io/whitepaper.pdf" target="_blank">Whitepaper</a><br/>
+                                <a href="https://docs.fundrequest.io/display/PUB" target="_blank">Documentation</a>
+                                </div>
+                            </div>
+                        </div>
+                         <div className="gr-2">
+                            <div className="footer-section">
+                                <div className="title">
+                                Company
+                                </div>
+                                <div className="content">
+                                <a href="">Team</a><br/>
+                                <a href="">Advisors</a><br/>
+                                </div>
+                            </div>
+                        </div>
+                         <div className="gr-2">
+                            <div className="footer-section">
+                                <div className="title">
+                                Legal
+                                </div>
+                                <div className="content">
+                                <a href="" target="_blank">Disclaimer</a><br/>
+                                </div>
                             </div>
                         </div>
                     </div>

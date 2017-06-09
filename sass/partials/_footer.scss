@@ -1,11 +1,10 @@
-$footerHeight: 170px;
 $footerLogoHeight: 24px;
 
 .footer {
-  height: $footerHeight;
   width: 100%;
   background-color: rgba(255,255,255,0.4);
-  padding-top : 70px;
+  padding-top : 40px;
+  padding-bottom : 50px;
 
   .gr-container {
     max-width: 1140px;
@@ -31,15 +30,35 @@ $footerLogoHeight: 24px;
   .copyright {
     color: #98999e;
     font-size: 14px;
+    opacity: 0.8;
     vertical-align: middle;
   }
 
-  .slogan {
-    color: $colorSecondarySoft;
-    font-size: 14px;
-    vertical-align: middle;
-    float:right;
-    width: 100%
+  .footer-section {
+
+      .title {
+      color: #696a6f;
+      font-size: 13px;
+      padding-bottom: 10px;
+    }
+
+      .content {
+        a {
+          color: #98999e;
+          font-size: 13px;
+          opacity: 0.8;
+          cursor: pointer;
+        }
+
+        a:link {
+          text-decoration: none;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+
+    }
   }
 
   h4 {
