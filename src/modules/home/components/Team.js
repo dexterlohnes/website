@@ -28,7 +28,7 @@ const Team = ({}) => {
                     <br/>
                     <br/>
                     <div className="row">
-                        <div className="gr-4 center">
+                        <div className="gr-4 center gr-12@mobile gr-6@tablet">
                             <Member
                                 avatar={getPath('images/app/home/karel-striegel-avatar.jpg')}
                                 name={'Karel Striegel'}
@@ -36,7 +36,7 @@ const Team = ({}) => {
                                 text={'app.home.team.karel.text'}
                             />
                         </div>
-                        <div className="gr-4 center">
+                        <div className="gr-4 center gr-12@mobile gr-6@tablet">
                             <Member
                                 avatar={getPath('images/app/home/tim-dierckxsens-avatar.jpg')}
                                 name={'Tim Dierckxsens'}
@@ -44,7 +44,7 @@ const Team = ({}) => {
                                 text={'app.home.team.tim.text'}
                             />
                         </div>
-                        <div className="gr-4 center">
+                        <div className="gr-4 center gr-12@mobile gr-6@tablet">
                             <Member
                                 avatar={getPath('images/app/home/davy-van-roy-avatar.jpg')}
                                 name={'Davy Van Roy'}
@@ -54,7 +54,7 @@ const Team = ({}) => {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="gr-4 center">
+                        <div className="gr-4 center gr-12@mobile gr-6@tablet">
                             <Member
                                 avatar={getPath('images/app/home/david-hantson-avatar.png')}
                                 name={'David Hantson'}
@@ -62,7 +62,7 @@ const Team = ({}) => {
                                 text={'app.home.team.david.text'}
                             />
                         </div>
-                        <div className="gr-4 center">
+                        <div className="gr-4 center gr-12@mobile gr-6@tablet">
                             <Member
                                 avatar={getPath('images/app/home/quinten-de-swaef-avatar.jpg')}
                                 name={'Quinten De Swaef'}
@@ -70,7 +70,7 @@ const Team = ({}) => {
                                 text={'app.home.team.quinten.text'}
                             />
                         </div>
-                        <div className="gr-4 center">
+                        <div className="gr-4 center gr-12@mobile gr-6@tablet">
                             <Member
                                 avatar={getPath('images/app/home/tom-degroote-avatar.jpg')}
                                 name={'Tom Degroote'}
@@ -89,31 +89,29 @@ const Team = ({}) => {
                     </div>
                     <br/>
                     <br/>
-                    <div className="row">
-                        <div className="gr-4 center">
-                            <Member
-                                avatar={getPath('images/app/home/thomas-matthys-avatar.jpg')}
-                                name={'Thomas Matthys'}
-                                title={'app.home.team.thomas.title'}
-                                text={'app.home.team.thomas.text'}
-                            />
-                        </div>
-                        <div className="gr-4 center">
-                            <Member
-                                avatar={getPath('images/app/home/dndfisc-avatar.jpg')}
-                                name={'D&D Fisc'}
-                                title={'app.home.team.dndfisc.title'}
-                                text={'app.home.team.dndfisc.text'}
-                            />
-                        </div>
-                        <div className="gr-4 center">
-                            <Member
-                                avatar={getPath('images/app/home/portelio-avatar.jpg')}
-                                name={'Portelio'}
-                                title={'app.home.team.portelio.title'}
-                                text={'app.home.team.portelio.text'}
-                            />
-                        </div>
+                    <div className="gr-4 center gr-12@mobile gr-6@tablet">
+                        <Member
+                            avatar={getPath('images/app/home/thomas-matthys-avatar.jpg')}
+                            name={'Thomas Matthys'}
+                            title={'app.home.team.thomas.title'}
+                            text={'app.home.team.thomas.text'}
+                        />
+                    </div>
+                    <div className="gr-4 center gr-12@mobile gr-6@tablet">
+                        <Member
+                            avatar={getPath('images/app/home/dndfisc-avatar.jpg')}
+                            name={'D&D Fisc'}
+                            title={'app.home.team.dndfisc.title'}
+                            text={'app.home.team.dndfisc.text'}
+                        />
+                    </div>
+                    <div className="gr-4 center gr-12@mobile gr-6@tablet">
+                        <Member
+                            avatar={getPath('images/app/home/portelio-avatar.jpg')}
+                            name={'Portelio'}
+                            title={'app.home.team.portelio.title'}
+                            text={'app.home.team.portelio.text'}
+                        />
                     </div>
                 </div>
             </div>

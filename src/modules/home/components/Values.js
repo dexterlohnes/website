@@ -17,33 +17,31 @@ const Values = ({}) => {
                     </div>
                     <br/>
                     <br/>
-                    <div className="row">
-                        <div className="gr-6 center">
-                            <StakeHolder
-                                title={'app.home.values.users.title'}
-                                text={'app.home.values.users.text'}
-                            />
-                        </div>
-                        <div className="gr-6 center">
-                            <StakeHolder
-                                title={'app.home.values.developers.title'}
-                                text={'app.home.values.developers.text'}
-                            />
-                        </div>
+                    <div className="gr-6 center gr-12@mobile">
+                        <StakeHolder
+                            title={'app.home.values.users.title'}
+                            text={'app.home.values.users.text'}
+                        />
                     </div>
-                    <div className="row">
-                        <div className="gr-6 center">
-                            <StakeHolder
-                                title={'app.home.values.business.title'}
-                                text={'app.home.values.business.text'}
-                            />
-                        </div>
-                        <div className="gr-6 center">
-                            <StakeHolder
-                                title={'app.home.values.projects.title'}
-                                text={'app.home.values.projects.text'}
-                            />
-                        </div>
+                    <div className="gr-6 center gr-12@mobile">
+                        <StakeHolder
+                            title={'app.home.values.developers.title'}
+                            text={'app.home.values.developers.text'}
+                        />
+                    </div>
+                
+                
+                    <div className="gr-6 center gr-12@mobile">
+                        <StakeHolder
+                            title={'app.home.values.business.title'}
+                            text={'app.home.values.business.text'}
+                        />
+                    </div>
+                    <div className="gr-6 center gr-12@mobile">
+                        <StakeHolder
+                            title={'app.home.values.projects.title'}
+                            text={'app.home.values.projects.text'}
+                        />
                     </div>
                 </div>
             </div>
