@@ -39,7 +39,7 @@ class Footer extends Component {
             <div className="footer">
                 <div className="gr-container">
                     <div className="row">
-                        <div className="gr-6">
+                        <div className="gr-6 gr-12@mobile">
                             <Link to={getPath(this.props.language + '/home')}>
                                 <img src={getPath('images/app/header-logo.png')} className="footer-logo"/>
                             </Link>
@@ -57,7 +57,7 @@ class Footer extends Component {
                                 <a href="https://fundrequest.io" target="_blank"><Icon name="globe" size="lg"/></a>
                             </div>
                         </div>
-                        <div className="gr-2">
+                        <div className="gr-2 hide@mobile">
                             <div className="footer-section">
                                 <div className="title">
                                 <FormattedMessage
@@ -81,7 +81,7 @@ class Footer extends Component {
                                 </div>
                             </div>
                         </div>
-                         <div className="gr-2">
+                         <div className="gr-2 hide@mobile">
                             <div className="footer-section">
                                 <div className="title">
                                 <FormattedMessage
@@ -105,7 +105,7 @@ class Footer extends Component {
                                 </div>
                             </div>
                         </div>
-                         <div className="gr-2">
+                         <div className="gr-2 hide@mobile">
                             <div className="footer-section">
                                 <div className="title">
                                 <FormattedMessage
