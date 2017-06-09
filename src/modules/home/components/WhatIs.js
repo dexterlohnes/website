@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SectionHeader from './SectionHeader'
-
+import {FormattedMessage} from 'react-intl'
 
 const WhatIs = ({}) => {
     return (
@@ -17,9 +17,15 @@ const WhatIs = ({}) => {
                             <br/>
                             <br/>
                            <div className="description">
-                                FundRequest is an integrated platform to fund an open source project and financially incentivise 
-                                a community to develop a solution to a problem, to fix bugs or to program additional features 
-                                for an existing application.
+                            <FormattedMessage
+                                id={'app.home.whatis.description1'}
+                                tagName={'p'}
+                            />
+                            <br/>
+                            <FormattedMessage
+                                id={'app.home.whatis.description2'}
+                                tagName={'p'}
+                            />
                            </div>
                         </div>
                     </div>
