@@ -8,7 +8,10 @@ $footerLogoHeight: 24px;
 
   .gr-container {
     max-width: 1140px;
+
   }
+
+
 
   .social-container {
     padding-top: 15px;
@@ -43,6 +46,7 @@ $footerLogoHeight: 24px;
     }
 
       .content {
+        max-width: 100%;
         a {
           color: #98999e;
           font-size: 13px;
