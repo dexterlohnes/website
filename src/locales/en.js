@@ -6,6 +6,16 @@ export default {
         'app.header.sign-up': 'Get Invited',
         'app.header.crowdsale': 'Crowdsale',
 
+        'app.footer.copyright': '© 2017 FundRequest. All rights reserved.',
+        'app.footer.resources.title': 'Resources',
+        'app.footer.resources.link.whitepaper': 'Whitepaper',
+        'app.footer.resources.link.documentation': 'Documentation',
+        'app.footer.company.title': 'Company',
+        'app.footer.company.link.team': 'Team',
+        'app.footer.company.link.advisors': 'Advisors',
+        'app.footer.legal.title': 'Legal',
+        'app.footer.legal.link.disclaimer': 'Disclaimer',
+
         'app.home.introduction.title': 'Funding and rewarding open source development',
         'app.home.introduction.intro': 'FundRequest makes it easy to fund open issues on any project, in any language',
         'app.home.introduction.get-started': 'Coming Soon !',

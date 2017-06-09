@@ -9,6 +9,7 @@ import {pushHistory} from '../tools/HistoryTools'
 import {ButtonTypes} from './Button'
 import Button from './Button'
 import {Icon} from './Icons'
+import {FormattedMessage} from 'react-intl'
 
 
 const mapStateToProps = (state) => {
@@ -43,7 +44,10 @@ class Footer extends Component {
                                 <img src={getPath('images/app/header-logo.png')} className="footer-logo"/>
                             </Link>
                             <div className="copyright">
-                            © 2017 FundRequest. All rights reserved.
+                            <FormattedMessage
+                                    id={'app.footer.copyright'}
+                                    tagName={'p'}
+                            />
                             </div>
                             <div className="social-container">
                                 <a href="https://twitter.com/fundrequest_io" target="_blank"><Icon name="twitter" size="lg"/></a>
@@ -56,32 +60,66 @@ class Footer extends Component {
                         <div className="gr-2">
                             <div className="footer-section">
                                 <div className="title">
-                                Resources
+                                <FormattedMessage
+                                    id={'app.footer.resources.title'}
+                                    tagName={'p'}
+                                />
                                 </div>
                                 <div className="content">
-                                <a href="https://fundrequest.io/whitepaper.pdf" target="_blank">Whitepaper</a><br/>
-                                <a href="https://docs.fundrequest.io/display/PUB" target="_blank">Documentation</a>
+                                <a href="https://fundrequest.io/whitepaper.pdf" target="_blank">
+                                    <FormattedMessage
+                                        id={'app.footer.resources.link.whitepaper'}
+                                        tagName={'p'}
+                                    />
+                                </a>
+                                <a href="https://docs.fundrequest.io/display/PUB" target="_blank">
+                                    <FormattedMessage
+                                        id={'app.footer.resources.link.documentation'}
+                                        tagName={'p'}
+                                    />
+                                </a>
                                 </div>
                             </div>
                         </div>
                          <div className="gr-2">
                             <div className="footer-section">
                                 <div className="title">
-                                Company
+                                <FormattedMessage
+                                    id={'app.footer.company.title'}
+                                    tagName={'p'}
+                                />
                                 </div>
                                 <div className="content">
-                                <a href="">Team</a><br/>
-                                <a href="">Advisors</a><br/>
+                                <a href="">
+                                    <FormattedMessage
+                                        id={'app.footer.company.link.team'}
+                                        tagName={'p'}
+                                    />
+                                </a>
+                                <a href="">
+                                    <FormattedMessage
+                                        id={'app.footer.company.link.advisors'}
+                                        tagName={'p'}
+                                    />
+                                </a><br/>
                                 </div>
                             </div>
                         </div>
                          <div className="gr-2">
                             <div className="footer-section">
                                 <div className="title">
-                                Legal
+                                <FormattedMessage
+                                        id={'app.footer.legal.title'}
+                                        tagName={'p'}
+                                />
                                 </div>
                                 <div className="content">
-                                <a href="" target="_blank">Disclaimer</a><br/>
+                                <a href="" target="_blank">
+                                    <FormattedMessage
+                                        id={'app.footer.legal.link.disclaimer'}
+                                        tagName={'p'}
+                                    />
+                                </a><br/>
                                 </div>
                             </div>
                         </div>
