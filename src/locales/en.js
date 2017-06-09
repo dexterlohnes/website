@@ -85,9 +85,9 @@ export default {
         'app.home.team.thomas.text': 'Thomas conducts academic research in the field of banking and corporate finance. With his affinity for numbers and critical mind, he is always eager to share his views on the financial model of FundRequest.',
 
         'app.home.team.dndfisc.title': 'Finance Advisors',
-        'app.home.team.dndfisc.text': 'Accounting & fiscal engineering firm, experienced in all aspects of a startup. They provide expert advice not only financially but also on business and marketing plans. The team has been working with them for more then four years now.',
+        'app.home.team.dndfisc.text': 'D&D is an accounting & fiscal engineering firm experienced in all aspects of supporting a startup. They provide expert advice not only financially but also on business and marketing plans. The team has been working with them for more than four years now.',
 
         'app.home.team.portelio.title': 'Legal Advisors',
-        'app.home.team.portelio.text': 'Portelio is an independent Belgian law firm, specialized in business law, corporate law and intellectual property rights. They advise FundRequest in all legal matters.'
+        'app.home.team.portelio.text': 'Portelio is an independent Belgian law firm specialized in business law, corporate law and intellectual property rights. They advise FundRequest in all legal matters.'
     }
 }
