@@ -1,7 +1,7 @@
 $mileStoneWidth: 220px;
 
 .home .roadmap {
-  height: 530px;
+  padding-bottom: 70px;
   background-color: rgba(255,255,255,0.4);
 
   .milestone-step {
@@ -29,7 +29,7 @@ $mileStoneWidth: 220px;
     }
     .subtitle {
       color: #000000;
-      padding: 10px;
+
     }
   }
 }

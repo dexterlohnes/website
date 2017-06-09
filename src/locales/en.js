@@ -13,6 +13,8 @@ export default {
         'app.home.introduction.sign-in': 'Get invited',
 
         'app.home.whatis.title': 'What is FundRequest?',
+        'app.home.whatis.description1': 'FundRequest is more than a platform to fund projects. We provide the best experience to fund an issue and incentivise the open source community. FundRequest breaks down barriers traditionally encountered in open source by providing a support layer between no support and enterprise level support. ',
+        'app.home.whatis.description2': 'The ease of use of the FundRequest platform enables users to fund issues without any coding knowledge. It allows developers to search for funded issues that best match their skill set to solve.',
 
         'app.home.steps.title': 'Getting Started Takes 5 Minutes',
         'app.home.steps.download': 'Download',
