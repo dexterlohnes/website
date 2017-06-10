@@ -6,7 +6,7 @@ $headerLogoHeight: 24px;
   height: $headerHeight;
   line-height: $headerHeight;
   width: 100%;
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   border-bottom: 1px solid $colorPrimary;
 
   .gr-container {
@@ -23,11 +23,47 @@ $headerLogoHeight: 24px;
     text-align: right;
     margin-right: $headerPadding;
 
-    a {
+    .nav-item {
       color: $colorNavigationLinks;
       text-decoration: inherit;
       margin-right: 20px;
       cursor: pointer;
+      display: inline-block;
     }
+
+    .toggle-icon {
+      display: none;
+    }
+
+    @media screen and (max-width: $maxTabletWidth) {
+      .nav-item {
+        display: none;
+      }
+      .toggle-icon {
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 30px;
+        color: $colorNavigationLinks;
+        cursor: pointer;
+      }
+
+      &.responsive-open {
+        position: relative;
+        margin-right: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: 2;
+      }
+      &.responsive-open .toggle-icon {
+        position: absolute;
+        right: 25px;
+        top: 30px - $headerHeight;
+      }
+      &.responsive-open .nav-item {
+        display: block;
+        margin-right: 25px;
+      }
+    }
+
   }
 }

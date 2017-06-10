@@ -8,6 +8,8 @@ import {IndexLink, Link} from 'react-router'
 import {pushHistory} from '../tools/HistoryTools'
 import {ButtonTypes} from './Button'
 import Button from './Button'
+import {Icon} from './Icons'
+import ui from 'redux-ui'
 
 const mapStateToProps = (state) => {
     return {
@@ -21,6 +23,12 @@ const mapDispatchToProps = (dispatch) => {
     }, dispatch)
 }
 
+@ui({
+    key: 'header',
+    state: {
+        navigationOpen: false
+    }
+})
 @connect(
     mapStateToProps,
     mapDispatchToProps
@@ -31,32 +39,48 @@ class Header extends Component {
         pushHistory(getPath(this.props.language + '/login'))
     }
 
+    toggleMenu() {
+        this.props.updateUI('navigationOpen', !this.props.ui.navigationOpen)
+    }
+
     render() {
+        let navigationOpenClass = this.props.ui.navigationOpen ? ' ' + 'responsive-open' : ''
+
         return (
             <div className="header">
                 <div className="gr-container">
                     <div className="row">
-                        <div className="gr-3">
+                        <div className="gr-3 gr-12@tablet gr-12@mobile">
                             <Link to={getPath(this.props.language + '/home')}>
                                 <img src={getPath('images/app/header-logo.png')} className="header-logo"/>
                             </Link>
                         </div>
 
-                        <div className="gr-9">
-                            <div className="navigation">
-                                <Link to={getPath(this.props.language + '/roadmap')}>Roadmap</Link>
-				                <a href="https://fundrequest.io/whitepaper.pdf"  target="_blank">Whitepaper</a>
-                                <a href="https://blog.fundrequest.io" target="_blank">Blog</a>
-                                <a href="https://docs.fundrequest.io/display/PUB/" target="_blank">Docs</a>
-                                <Link to="">About Us</Link>
-                                <Button text={'app.header.sign-up'}
-                                        onClick={() => {}}
-                                        className={'sign-up-button'}
-                                />
-                                <Button text={'app.header.crowdsale'}
-                                        onClick={() => {}}
-                                        styleType={ButtonTypes.SECONDARY}
-                                        className={'crowdsale-button'}
+                        <div className="gr-9 gr-12@tablet gr-12@mobile">
+                            <div className={'navigation' + navigationOpenClass}>
+                                <a className="nav-item" href="#roadmap">Roadmap</a>
+                                <a className="nav-item" href="https://fundrequest.io/whitepaper.pdf" target="_blank">Whitepaper</a>
+                                <a className="nav-item" href="https://blog.fundrequest.io" target="_blank">Blog</a>
+                                <a className="nav-item" href="https://docs.fundrequest.io/display/PUB/" target="_blank">Docs</a>
+                                <a className="nav-item" href="#about-us">About Us</a>
+                                <div className="nav-item center@mobile center@tablet">
+                                    <Button text={'app.header.sign-up'}
+                                            onClick={() => {
+                                            }}
+                                            className={'sign-up-button nav-item'}
+                                    />
+                                    <Button text={'app.header.crowdsale'}
+                                            onClick={() => {
+                                            }}
+                                            styleType={ButtonTypes.SECONDARY}
+                                            className={'crowdsale-button nav-item'}
+                                    />
+                                </div>
+                                <Icon
+                                    className={'toggle-icon'}
+                                    name={'bars'}
+                                    onClick={this.toggleMenu.bind(this)}
+                                    size={'lg'}
                                 />
                             </div>
                         </div>
