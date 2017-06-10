@@ -14,8 +14,18 @@ export default class AuthService {
             this.lock = new Auth0Lock(clientId, domain, {
                 auth: {
                     redirectUrl: redirectUrl,
-                    responseType: 'token'
+                    responseType: 'token',
+                    params: {
+                        scope: 'openid roles user_id name email'
+                    }
+                },
+                theme: {
+                    logo: '/images/app/footer-logo.png'
+                },
+                languageDictionary: {
+                    title: "FundRequest login"
                 }
+
             })
             // Add callback for lock `authenticated` event
             this.lock.on('authenticated', this._doAuthentication.bind(this))
