@@ -12,6 +12,12 @@ export default class AuthService {
                 params: {
                     scope: 'openid roles user_id name email'
                 }
+            },
+            theme: {
+                logo: '/images/app/footer-logo.png'
+            },
+            languageDictionary: {
+                title: "FundRequest login"
             }
         })
         // Add callback for lock `authenticated` event
