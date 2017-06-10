@@ -44,7 +44,7 @@ $headerLogoHeight: 24px;
         position: absolute;
         right: 25px;
         top: 30px;
-        color: $colorNavigationLinks;
+        color: $colorSecondarySoft;
         cursor: pointer;
       }
 
@@ -65,5 +65,18 @@ $headerLogoHeight: 24px;
       }
     }
 
+    @media screen and (max-width: $maxMobileWidth){
+      .toggle-icon {
+        top: 30px - $headerHeight;
+      }
+    }
+
+  }
+
+  @media screen and (max-width: $maxMobileWidth){
+    .gr-12\@mobile {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }

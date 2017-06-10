@@ -1,4 +1,4 @@
-$maxTabletMobile: 480px;
+$maxMobileWidth: 480px;
 $maxTabletWidth: 1024px;
 
 @import "../public/bower_components/gridle/sass/grid";
@@ -20,10 +20,10 @@ $maxTabletWidth: 1024px;
 ));
 
 @include gridle_register_state (mobile, (
-        max-width : $maxTabletMobile
+        max-width : $maxMobileWidth
 ));
 @include gridle_register_state (tablet, (
-        min-width : $maxTabletMobile + 1,
+        min-width : $maxMobileWidth + 1,
         max-width : $maxTabletWidth
 ));
 
