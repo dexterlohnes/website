@@ -20,7 +20,7 @@ export default class AuthService {
                     }
                 },
                 theme: {
-                    logo: '/images/app/footer-logo.png'
+                    logo: '/images/app/auth-logo.png'
                 },
                 languageDictionary: {
                     title: "FundRequest login"
