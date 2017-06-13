@@ -58,11 +58,11 @@ class Header extends Component {
 
                         <div className="gr-9 gr-12@tablet gr-12@mobile">
                             <div className={'navigation' + navigationOpenClass}>
-                                <a className="nav-item" href="#roadmap">Roadmap</a>
+                                <a className="nav-item" href="home#roadmap">Roadmap</a>
                                 <a className="nav-item" href="https://fundrequest.io/whitepaper.pdf" target="_blank">Whitepaper</a>
                                 <a className="nav-item" href="https://blog.fundrequest.io" target="_blank">Blog</a>
                                 <a className="nav-item" href="https://docs.fundrequest.io/display/PUB/" target="_blank">Docs</a>
-                                <a className="nav-item" href="#about-us">About Us</a>
+                                <a className="nav-item" href="home#about-us">About Us</a>
                                 <div className="nav-item center@mobile center@tablet">
                                     <Button text={'app.header.sign-up'}
                                             onClick={() => {
