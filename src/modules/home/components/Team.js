@@ -48,6 +48,14 @@ const Team = ({}) => {
                             </div>
                             <div className="gr-4 center gr-12@mobile gr-6@tablet">
                                 <Member
+                                    avatar={getPath('images/app/home/gerbert-vandenberghe-avatar.jpg')}
+                                    name={'Gerbert Vandenberghe'}
+                                    title={'app.home.team.gerbert.title'}
+                                    text={'app.home.team.gerbert.text'}
+                                />
+                            </div>
+                            <div className="gr-4 center gr-12@mobile gr-6@tablet">
+                                <Member
                                     avatar={getPath('images/app/home/davy-van-roy-avatar.jpg')}
                                     name={'Davy Van Roy'}
                                     title={'app.home.team.davy.title'}
@@ -70,7 +78,7 @@ const Team = ({}) => {
                                     text={'app.home.team.quinten.text'}
                                 />
                             </div>
-                            <div className="gr-4 center gr-12@mobile gr-6@tablet">
+                            <div className="gr-12 center gr-12@mobile gr-6@tablet">
                                 <Member
                                     avatar={getPath('images/app/home/tom-degroote-avatar.jpg')}
                                     name={'Tom Degroote'}
