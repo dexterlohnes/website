@@ -80,7 +80,7 @@ export default {
         'app.home.team.tim.text': 'Tim is always interested in the ideas shared by others and connects people to work on them. He thinks like a customer and builds strategic models to determine the business viability of the idea.',
 
         'app.home.team.gerbert.title': 'Analyst',
-        'app.home.team.gerbert.text': 'Gerbert is always interested in the ideas shared by others and connects people to work on them. He thinks like a customer and builds strategic models to determine the business viability of the idea.',
+        'app.home.team.gerbert.text': 'Gerbert is always eager to learn and discuss about his ideas and insights, he gets thrilled of domain modeling. His focus is on creating business value with respect for providing the best possible user experience.',
 
         'app.home.team.davy.title': 'Developer',
         'app.home.team.davy.text': 'Davy builds on existing ideas and makes them better. He solves the toughest problems and gets things done. Davy leads the backend development.',
