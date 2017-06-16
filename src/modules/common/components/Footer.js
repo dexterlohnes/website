@@ -53,7 +53,7 @@ class Footer extends Component {
                                 <a href="https://twitter.com/fundrequest_io" target="_blank"><Icon name="twitter" size="lg"/></a>
                                 <a href="https://blog.fundrequest.io" target="_blank"><Icon name="medium" size="lg"/></a>
                                 <a href="https://github.com/fundrequest/" target="_blank"><Icon name="github" size="lg"/></a>
-                                <a href="fundrequest.slack.com" target="_blank"><Icon name="slack" size="lg"/></a>
+                                <a href="https://fundrequest.slack.com" target="_blank"><Icon name="slack" size="lg"/></a>
                                 <a href="https://fundrequest.io" target="_blank"><Icon name="globe" size="lg"/></a>
                             </div>
                         </div>
@@ -90,13 +90,13 @@ class Footer extends Component {
                                 />
                                 </div>
                                 <div className="content">
-                                <a href="">
+                                <a href="home#about-us">
                                     <FormattedMessage
                                         id={'app.footer.company.link.team'}
                                         tagName={'p'}
                                     />
                                 </a>
-                                <a href="">
+                                <a href="home#about-us">
                                     <FormattedMessage
                                         id={'app.footer.company.link.advisors'}
                                         tagName={'p'}
@@ -114,7 +114,7 @@ class Footer extends Component {
                                 />
                                 </div>
                                 <div className="content">
-                                <a href="" target="_blank">
+                                <a href="https://fundrequest.io/disclaimer.pdf" target="_blank">
                                     <FormattedMessage
                                         id={'app.footer.legal.link.disclaimer'}
                                         tagName={'p'}
