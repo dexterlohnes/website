@@ -6,6 +6,8 @@ export default {
         'app.header.sign-up': 'Get Invited',
         'app.header.crowdsale': 'Crowdsale',
 
+        'app.slack.title': 'Come and join our Community!',
+
         'app.footer.copyright': '© 2017 FundRequest. All rights reserved.',
         'app.footer.resources.title': 'Resources',
         'app.footer.resources.link.whitepaper': 'Whitepaper',
