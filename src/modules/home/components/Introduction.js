@@ -37,7 +37,7 @@ const Introduction = ({language}) => {
                                         tagName={'span'}
                                     />
                                 </span>
-                                <Link className="sign-in-hyperlink" to={getPath(language + '/login')}>
+                                <Link className="sign-in-hyperlink" to={getPath(language + '/home#slack')}>
                                     <FormattedMessage
                                         id="app.home.introduction.sign-in"
                                         tagName={'span'}

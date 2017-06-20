@@ -6,6 +6,7 @@ import Values from './Values'
 import Goals from './Goals'
 import Roadmap from './Roadmap'
 import Team from './Team'
+import Slack from '../../common/components/Slack'
 import {defaultLanguage} from '../../common/tools/Internationalization'
 
 const HomePage = ({ language = defaultLanguage }) => {
@@ -20,6 +21,7 @@ const HomePage = ({ language = defaultLanguage }) => {
             <Goals />
             <Roadmap />
             <Team />
+            <Slack />
         </div>
     )
 }
