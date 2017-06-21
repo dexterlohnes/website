@@ -10,6 +10,7 @@ import {ButtonTypes} from './Button'
 import Button from './Button'
 import {Icon} from './Icons'
 import {FormattedMessage} from 'react-intl'
+import Scroll from 'react-scroll'
 
 
 const mapStateToProps = (state) => {
@@ -44,87 +45,94 @@ class Footer extends Component {
                                 <img src={getPath('images/app/header-logo.png')} className="footer-logo"/>
                             </Link>
                             <div className="copyright">
-                            <FormattedMessage
+                                <FormattedMessage
                                     id={'app.footer.copyright'}
                                     tagName={'p'}
-                            />
+                                />
                             </div>
                             <div className="social-container">
-                                <a href="https://twitter.com/fundrequest_io" target="_blank"><Icon name="twitter" size="lg"/></a>
-                                <a href="https://blog.fundrequest.io" target="_blank"><Icon name="medium" size="lg"/></a>
-                                <a href="https://github.com/fundrequest/" target="_blank"><Icon name="github" size="lg"/></a>
-                                <a href="https://fundrequest.slack.com" target="_blank"><Icon name="slack" size="lg"/></a>
+                                <a href="https://twitter.com/fundrequest_io" target="_blank"><Icon name="twitter"
+                                                                                                   size="lg"/></a>
+                                <a href="https://blog.fundrequest.io" target="_blank"><Icon name="medium"
+                                                                                            size="lg"/></a>
+                                <a href="https://github.com/fundrequest/" target="_blank"><Icon name="github"
+                                                                                                size="lg"/></a>
+                                <a href="https://fundrequest.slack.com" target="_blank"><Icon name="slack"
+                                                                                              size="lg"/></a>
                                 <a href="https://fundrequest.io" target="_blank"><Icon name="globe" size="lg"/></a>
                             </div>
                         </div>
                         <div className="gr-2 hide@mobile">
                             <div className="footer-section">
                                 <div className="title">
-                                <FormattedMessage
-                                    id={'app.footer.resources.title'}
-                                    tagName={'p'}
-                                />
+                                    <FormattedMessage
+                                        id={'app.footer.resources.title'}
+                                        tagName={'p'}
+                                    />
                                 </div>
                                 <div className="content">
-                                <a href="https://fundrequest.io/whitepaper.pdf" target="_blank">
-                                    <FormattedMessage
-                                        id={'app.footer.resources.link.whitepaper'}
-                                        tagName={'p'}
-                                    />
-                                </a>
-                                <a href="https://docs.fundrequest.io/display/PUB" target="_blank">
-                                    <FormattedMessage
-                                        id={'app.footer.resources.link.documentation'}
-                                        tagName={'p'}
-                                    />
-                                </a>
+                                    <a href="https://fundrequest.io/whitepaper.pdf" target="_blank">
+                                        <FormattedMessage
+                                            id={'app.footer.resources.link.whitepaper'}
+                                            tagName={'p'}
+                                        />
+                                    </a>
+                                    <a href="https://docs.fundrequest.io/display/PUB" target="_blank">
+                                        <FormattedMessage
+                                            id={'app.footer.resources.link.documentation'}
+                                            tagName={'p'}
+                                        />
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                         <div className="gr-2 hide@mobile">
+                        <div className="gr-2 hide@mobile">
                             <div className="footer-section">
                                 <div className="title">
-                                <FormattedMessage
-                                    id={'app.footer.company.title'}
-                                    tagName={'p'}
-                                />
+                                    <FormattedMessage
+                                        id={'app.footer.company.title'}
+                                        tagName={'p'}
+                                    />
                                 </div>
                                 <div className="content">
-                                <a href="home#about-us">
-                                    <FormattedMessage
-                                        id={'app.footer.company.link.team'}
-                                        tagName={'p'}
-                                    />
-                                </a>
-                                <a href="home#about-us">
-                                    <FormattedMessage
-                                        id={'app.footer.company.link.advisors'}
-                                        tagName={'p'}
-                                    />
-                                </a><br/>
+                                    <Scroll.Link to="about-us" smooth={true}
+                                                 offset={-75}>
+                                        <FormattedMessage
+                                            id={'app.footer.company.link.team'}
+                                            tagName={'p'}
+                                        />
+                                    </Scroll.Link>
+                                    <Scroll.Link to="about-us" smooth={true}
+                                                 offset={-75}>
+                                        <FormattedMessage
+                                            id={'app.footer.company.link.advisors'}
+                                            tagName={'p'}
+                                        />
+                                    </Scroll.Link>
+                                    <br/>
                                 </div>
                             </div>
                         </div>
-                         <div className="gr-2 hide@mobile">
+                        <div className="gr-2 hide@mobile">
                             <div className="footer-section">
                                 <div className="title">
-                                <FormattedMessage
+                                    <FormattedMessage
                                         id={'app.footer.legal.title'}
                                         tagName={'p'}
-                                />
+                                    />
                                 </div>
                                 <div className="content">
-                                <a href="https://fundrequest.io/disclaimer.pdf" target="_blank">
-                                    <FormattedMessage
-                                        id={'app.footer.legal.link.disclaimer'}
-                                        tagName={'p'}
-                                    />
-                                </a><br/>
+                                    <a href="https://fundrequest.io/disclaimer.pdf" target="_blank">
+                                        <FormattedMessage
+                                            id={'app.footer.legal.link.disclaimer'}
+                                            tagName={'p'}
+                                        />
+                                    </a><br/>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         )
