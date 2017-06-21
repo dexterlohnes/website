@@ -10,6 +10,7 @@ import {ButtonTypes} from './Button'
 import Button from './Button'
 import {Icon} from './Icons'
 import ui from 'redux-ui'
+import Scroll from 'react-scroll'
 
 const mapStateToProps = (state) => {
     return {
@@ -58,11 +59,11 @@ class Header extends Component {
 
                         <div className="gr-9 gr-12@tablet gr-12@mobile">
                             <div className={'navigation' + navigationOpenClass}>
-                                <a className="nav-item" href="home#roadmap">Roadmap</a>
+                                <Scroll.Link to="roadmap" className="nav-item" smooth={true}>Roadmap</Scroll.Link>
                                 <a className="nav-item" href="https://fundrequest.io/whitepaper.pdf" target="_blank">Whitepaper</a>
                                 <a className="nav-item" href="https://blog.fundrequest.io" target="_blank">Blog</a>
                                 <a className="nav-item" href="https://docs.fundrequest.io/display/PUB/" target="_blank">Docs</a>
-                                <a className="nav-item" href="home#about-us">About Us</a>
+                                <Scroll.Link to="about-us" className="nav-item" smooth={true}>About Us</Scroll.Link>
                                 <div className="nav-item center@mobile center@tablet">
                                     <Button text={'app.header.sign-up'}
                                             onClick={() => {
