@@ -38,7 +38,7 @@ const Introduction = ({language}) => {
                                         tagName={'span'}
                                     />
                                 </span>
-                                <Scroll.Link to="slack" smooth={true} className="sign-in-hyperlink">
+                                <Scroll.Link to="slack" smooth={true} offset={-75} className="sign-in-hyperlink">
                                     <FormattedMessage
                                         id="app.home.introduction.sign-in"
                                         tagName={'span'}
