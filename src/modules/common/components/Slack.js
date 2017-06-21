@@ -20,7 +20,7 @@ const Slack = ({}) => {
                     </div>
                     <div className="row-full">
                         <div className="lean">
-                            <iframe src="http://slack.fundrequest.io"></iframe>
+                            <iframe src="https://slack.fundrequest.io"></iframe>
                         </div>
                     </div>
                 </div>
