@@ -5,6 +5,7 @@ import Button, {ButtonTypes} from '../../common/components/Button'
 import {Link} from 'react-router'
 import {defaultLanguage} from '../../common/tools/Internationalization'
 import {getPath} from '../../common/tools/URLTools'
+import Scroll from 'react-scroll'
 
 const Introduction = ({language}) => {
     return (
@@ -37,12 +38,12 @@ const Introduction = ({language}) => {
                                         tagName={'span'}
                                     />
                                 </span>
-                                <Link className="sign-in-hyperlink" to={getPath(language + '/home#slack')}>
+                                <Scroll.Link to="slack" smooth={true} className="sign-in-hyperlink">
                                     <FormattedMessage
                                         id="app.home.introduction.sign-in"
                                         tagName={'span'}
                                     />
-                                </Link>
+                                </Scroll.Link>
                             </div>
                         </div>
                     </div>

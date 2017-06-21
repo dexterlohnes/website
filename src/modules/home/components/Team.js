@@ -4,11 +4,11 @@ import SectionHeader from './SectionHeader'
 import SectionSubHeader from './SectionSubHeader'
 import Member from './Member'
 import {getPath} from '../../common/tools/URLTools'
-import ScrollableAnchor from 'react-scrollable-anchor'
+import Scroll from 'react-scroll'
 
 const Team = ({}) => {
     return (
-        <ScrollableAnchor id={'about-us'}>
+        <Scroll.Element name="about-us" className="team section">
             <div className="team section">
                 <div className="content">
                     <div className="gr-container">
@@ -124,7 +124,7 @@ const Team = ({}) => {
                     </div>
                 </div>
             </div>
-        </ScrollableAnchor>
+        </Scroll.Element>
     )
 }
 
