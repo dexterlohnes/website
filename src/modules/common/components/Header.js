@@ -65,11 +65,13 @@ class Header extends Component {
                                 <a className="nav-item" href="https://docs.fundrequest.io/display/PUB/" target="_blank">Docs</a>
                                 <Scroll.Link to="about-us" className="nav-item" smooth={true}>About Us</Scroll.Link>
                                 <div className="nav-item center@mobile center@tablet">
-                                    <Button text={'app.header.sign-up'}
-                                            onClick={() => {
-                                            }}
-                                            className={'sign-up-button nav-item'}
-                                    />
+                                    <Scroll.Link to="slack" className="nav-item" smooth={true} style={{marginRight: '0'}}>
+                                        <Button text={'app.header.sign-up'}
+                                                onClick={() => {
+                                                }}
+                                                className={'sign-up-button'}
+                                        />
+                                    </Scroll.Link>
                                     <Button text={'app.header.crowdsale'}
                                             onClick={() => {
                                             }}
