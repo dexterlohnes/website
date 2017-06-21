@@ -61,6 +61,7 @@ class App extends React.Component {
             <MuiThemeProvider muiTheme={muiTheme}>
                 <div className="main-container">
                     <Header auth={this.props.route.auth}/>
+                    <div className="header-spacer"/>
                     {children}
                     <Footer/>
                 </div>
