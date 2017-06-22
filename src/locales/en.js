@@ -94,7 +94,7 @@ export default {
         'app.home.team.quinten.text': 'Quinten supports Davy with the backend development and is performing the first security audits of the platform.',
 
         'app.home.team.tom.title': 'Infrastructure',
-        'app.home.team.tom.text': 'Tom is a certified Linux Tier2 Architect and is in charge of defining and setting up all building blocked needed for development, hosting and running the platform.',
+        'app.home.team.tom.text': 'Tom is a certified Linux Tier2 Architect and is in charge of defining and setting up all building blocks needed for development, hosting and running the platform.',
 
         'app.home.team.thomas.title': 'Finance Advisor',
         'app.home.team.thomas.text': 'Thomas conducts academic research in the field of banking and corporate finance. With his affinity for numbers and critical mind, he is always eager to share his views on the financial model of FundRequest.',
