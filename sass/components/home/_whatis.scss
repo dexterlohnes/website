@@ -1,3 +1,5 @@
+$colorHomeIntroductionTextLight: #707070;
+
 .home .whatis {
   background-color: rgba(255,255,255,0.6);
   padding-bottom: 70px;
@@ -7,9 +9,16 @@
     text-decoration: underline;
     cursor: pointer;
 
-    &:link,
-    &:visited,
-    &:hover,
+
+    &:link {
+      color: #000000;
+    },
+    &:visited {
+      color: #000000;
+    },
+    &:hover {
+      color: $colorHomeIntroductionTextLight;
+    },
     &:active {
       color: $colorHomeIntroductionTextLight;
     }

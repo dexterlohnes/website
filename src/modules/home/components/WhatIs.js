@@ -28,8 +28,8 @@ const WhatIs = ({}) => {
                             />
                            </div>
                            <br/><br/>
-                           <div className="learn-more">
-                             <a href="https://docs.fundrequest.io/display/PUB" target="_blanc">Learn more</a>
+                           <div>
+                             <a href="https://docs.fundrequest.io/display/PUB" target="_blanc" className="learn-more-hyperlink">Learn more</a>
                            </div>
                         </div>
                     </div>
