@@ -12,6 +12,7 @@ export default {
         'app.footer.resources.title': 'Resources',
         'app.footer.resources.link.whitepaper': 'Whitepaper',
         'app.footer.resources.link.documentation': 'Documentation',
+        'app.footer.resources.link.blog': 'Blog',
         'app.footer.company.title': 'Company',
         'app.footer.company.link.team': 'Team',
         'app.footer.company.link.advisors': 'Advisors',
@@ -72,25 +73,25 @@ export default {
         'app.home.roadmap.phase4.text': 'Tired of issues? Fund a project, competition or a bug bounty programme',
 
         'app.home.team.title': 'About Us',
-        'app.home.team.core.title': 'Core',
-        'app.home.team.advisors.title': 'Advisors',
+        'app.home.team.core.title': 'CORE TEAM',
+        'app.home.team.advisors.title': 'ADVISORY BOARD',
 
         'app.home.team.karel.title': 'Founder',
         'app.home.team.karel.text': 'Karel has new ideas and solutions and shares them openly. He gets things done while bringing enthusiasm to the cause.',
 
-        'app.home.team.tim.title': 'Analyst',
+        'app.home.team.tim.title': 'Strategy Advisor',
         'app.home.team.tim.text': 'Tim is always interested in the ideas shared by others and connects people to work on them. He thinks like a customer and builds strategic models to determine the business viability of the idea.',
 
         'app.home.team.gerbert.title': 'Analyst',
         'app.home.team.gerbert.text': 'Gerbert is always eager to learn and discuss about his ideas and insights, he gets thrilled of domain modeling. His focus is on creating business value with respect for providing the best possible user experience.',
 
-        'app.home.team.davy.title': 'Developer',
+        'app.home.team.davy.title': 'Core Developer',
         'app.home.team.davy.text': 'Davy builds on existing ideas and makes them better. He solves the toughest problems and gets things done. Davy leads the backend development.',
 
-        'app.home.team.david.title': 'Developer',
+        'app.home.team.david.title': 'Core Developer',
         'app.home.team.david.text': 'David, a.k.a The Wizard, is in charge of leading the frontend development which includes protecting the usability and user-friendliness.',
 	
-        'app.home.team.quinten.title': 'Developer',
+        'app.home.team.quinten.title': 'Core Developer',
         'app.home.team.quinten.text': 'Quinten supports Davy with the backend development and is performing the first security audits of the platform.',
 
         'app.home.team.tom.title': 'Infrastructure',

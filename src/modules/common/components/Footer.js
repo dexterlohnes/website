@@ -71,9 +71,17 @@ class Footer extends Component {
                                     />
                                 </div>
                                 <div className="content">
+                                  {/* 
                                     <a href="https://fundrequest.io/whitepaper.pdf" target="_blank">
                                         <FormattedMessage
                                             id={'app.footer.resources.link.whitepaper'}
+                                            tagName={'p'}
+                                        />
+                                    </a>
+                                */}
+                                    <a href="https://blog.fundrequest.io" target="_blank">
+                                        <FormattedMessage
+                                            id={'app.footer.resources.link.blog'}
                                             tagName={'p'}
                                         />
                                     </a>

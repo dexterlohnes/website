@@ -59,11 +59,14 @@ class Header extends Component {
 
                         <div className="gr-9 gr-12@tablet gr-12@mobile">
                             <div className={'navigation' + navigationOpenClass}>
+                                <a className="nav-item" href="https://docs.fundrequest.io/display/PUB/" target="_blank">Documentation</a>
                                 <Scroll.Link to="roadmap" className="nav-item" smooth={true}
                                              offset={-75}>Roadmap</Scroll.Link>
+                                {/* 
                                 <a className="nav-item" href="https://fundrequest.io/whitepaper.pdf" target="_blank">Whitepaper</a>
+                                */}
+
                                 <a className="nav-item" href="https://blog.fundrequest.io" target="_blank">Blog</a>
-                                <a className="nav-item" href="https://docs.fundrequest.io/display/PUB/" target="_blank">Docs</a>
                                 <Scroll.Link to="about-us" className="nav-item" smooth={true} offset={-75}>About
                                     Us</Scroll.Link>
                                 <div className="nav-item center@mobile center@tablet">
@@ -75,12 +78,14 @@ class Header extends Component {
                                                 className={'sign-up-button'}
                                         />
                                     </Scroll.Link>
+                                    {/* 
                                     <Button text={'app.header.crowdsale'}
                                             onClick={() => {
                                             }}
                                             styleType={ButtonTypes.SECONDARY}
                                             className={'crowdsale-button nav-item'}
                                     />
+                                    */}
                                 </div>
                                 <Icon
                                     className={'toggle-icon'}

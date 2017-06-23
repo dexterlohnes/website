@@ -17,10 +17,12 @@ const Steps = ({}) => {
                             <br/>
                             <br/>
                             <br/>
+                        {/* 
                             <WizardStep
                                 title="app.home.steps.download"
                                 subtitle="app.home.steps.plugin"
                             />
+                        */}
                             <WizardStep
                                 title="app.home.steps.create"
                                 subtitle="app.home.steps.issue"

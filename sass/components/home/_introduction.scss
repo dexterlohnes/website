@@ -20,6 +20,8 @@ $colorHomeIntroductionTextLight: #707070;
   }
   .sign-in-hyperlink {
     font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
 
     &:link,
     &:visited,
