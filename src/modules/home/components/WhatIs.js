@@ -27,6 +27,10 @@ const WhatIs = ({}) => {
                                 tagName={'p'}
                             />
                            </div>
+                           <br/><br/>
+                           <div className="learn-more">
+                             <a href="https://docs.fundrequest.io/display/PUB" target="_blanc">Learn more</a>
+                           </div>
                         </div>
                     </div>
                 </div>
