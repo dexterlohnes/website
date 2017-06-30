@@ -71,23 +71,23 @@ class Footer extends Component {
                                     />
                                 </div>
                                 <div className="content">
-                                  {/* 
-                                    <a href="https://fundrequest.io/whitepaper.pdf" target="_blank">
+
+                                    <a href="https://fundrequest.io/whitepaper" target="_blank">
                                         <FormattedMessage
                                             id={'app.footer.resources.link.whitepaper'}
                                             tagName={'p'}
                                         />
                                     </a>
-                                */}
-                                    <a href="https://blog.fundrequest.io" target="_blank">
-                                        <FormattedMessage
-                                            id={'app.footer.resources.link.blog'}
-                                            tagName={'p'}
-                                        />
-                                    </a>
+                                   
                                     <a href="https://docs.fundrequest.io/display/PUB" target="_blank">
                                         <FormattedMessage
                                             id={'app.footer.resources.link.documentation'}
+                                            tagName={'p'}
+                                        />
+                                    </a>
+                                    <a href="https://blog.fundrequest.io" target="_blank">
+                                        <FormattedMessage
+                                            id={'app.footer.resources.link.blog'}
                                             tagName={'p'}
                                         />
                                     </a>
