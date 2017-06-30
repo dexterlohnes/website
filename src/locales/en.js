@@ -100,6 +100,9 @@ export default {
         'app.home.team.thomas.title': 'Finance Advisor',
         'app.home.team.thomas.text': 'Thomas conducts academic research in the field of banking and corporate finance. With his affinity for numbers and critical mind, he is always eager to share his views on the financial model of FundRequest.',
 
+        'app.home.team.nakrin.title': 'Investment & Growth',
+        'app.home.team.nakrin.text': 'Nakrin’s professional experience has been focused on acquisitions and growth strategies in SE Asia. Nakrin holds a MBA from the Harvard Business School and a BSc from USC’s Marshall School of Business where he graduated magna cum laude.',
+
         'app.home.team.dndfisc.title': 'Finance Advisors',
         'app.home.team.dndfisc.text': 'D&D is an accounting & fiscal engineering firm experienced in all aspects of supporting a startup. They provide expert advice not only financially but also on business and marketing plans. The team has been working with them for more than four years now.',
 
