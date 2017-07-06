@@ -98,7 +98,7 @@ export default {
         'app.home.team.tom.text': 'Tom is a certified Linux Tier2 Architect and is in charge of defining and setting up all building blocks needed for development, hosting and running the platform.',
 
         'app.home.team.thomas.title': 'Finance Advisor',
-        'app.home.team.thomas.text': 'Thomas conducts academic research in the field of banking and corporate finance. With his affinity for numbers and critical mind, he is always eager to share his views on the financial model of FundRequest.',
+        'app.home.team.thomas.text': 'Thomas is finalising his PhD in the field of banking and corporate finance at Vlerick Business School. With an affinity for numbers and critical mind, he is always eager to share his views on the business and financial model of FundRequest.',
 
         'app.home.team.nakrin.title': 'Investment & Growth',
         'app.home.team.nakrin.text': 'Nakrin’s professional experience has been focused on acquisitions and growth strategies in SE Asia. Nakrin holds a MBA from the Harvard Business School and a BSc from USC’s Marshall School of Business where he graduated magna cum laude.',
