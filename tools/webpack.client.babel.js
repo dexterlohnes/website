@@ -17,7 +17,7 @@ let publicPath = isProduction ? config.publicAssetPath : webpackDevServer.path +
 
 let entry = {
     'app': ['./src/main.js'],
-    // 'main': ['./sass/main.scss'],
+    'main': ['./sass/main.scss'],
     'plugins': ['./src/plugins.js']
 }
 
