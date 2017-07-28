@@ -2,8 +2,8 @@ import React, {Component} from 'react'
 import BlockchainPage from '../components/BlockchainPage'
 import {connect} from 'react-redux'
 import ui from 'redux-ui'
-import ItemStore from '../../../../build/contracts/ItemStore.json'
-import Item from '../../../../build/contracts/Item.json'
+// import ItemStore from '../../../../build/contracts/ItemStore.json'
+// import Item from '../../../../build/contracts/Item.json'
 import Blockchain from '../../common/tools/Blockchain'
 
 export const mapStateToProps = (state) => {
@@ -37,17 +37,17 @@ export default class BlockchainContainer extends Component {
         let s10 = this.props.ui.s10
         let blockchain = new Blockchain()
 
-        blockchain.getAccounts()
-            .then(() => blockchain.getContractInstance(ItemStore))
-            .then(() => blockchain.contractInstance.addItem(s10, {from: blockchain.account}))
-            .then(() => blockchain.contractInstance.getItem.call(blockchain.account))
-            .then((result) => {
-                console.log(result)
-                this.props.updateUI({
-                    s10: s10,
-                    status: result.c[0]
-                })
-            })
+        // blockchain.getAccounts()
+        //     .then(() => blockchain.getContractInstance(ItemStore))
+        //     .then(() => blockchain.contractInstance.addItem(s10, {from: blockchain.account}))
+        //     .then(() => blockchain.contractInstance.getItem.call(blockchain.account))
+        //     .then((result) => {
+        //         console.log(result)
+        //         this.props.updateUI({
+        //             s10: s10,
+        //             status: result.c[0]
+        //         })
+        //     })
     }
 
     onS10Change(event){
