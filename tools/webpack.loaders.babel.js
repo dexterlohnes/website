@@ -15,7 +15,7 @@ if (process.env.EXTRACT_TEXT_PLUGIN === 'true') {
             }),
             'style-loader',
             'css-loader?-minimize&importLoaders=1',
-            'postcss-loader',
+            // 'postcss-loader',
             'sass-loader'
         ]
     })
@@ -25,7 +25,7 @@ if (process.env.EXTRACT_TEXT_PLUGIN === 'true') {
         loaders: [
             'style-loader',
             'css-loader?-minimize&importLoaders=1&root=../public&',
-            'postcss-loader?!sass-loader?'
+            '!sass-loader?'
         ]
     })
 }
