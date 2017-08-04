@@ -92,13 +92,16 @@ export default {
         'app.home.team.david.text': 'David, a.k.a The Wizard, is in charge of leading the frontend development which includes protecting the usability and user-friendliness.',
 	
         'app.home.team.quinten.title': 'Core Developer',
-        'app.home.team.quinten.text': 'Quinten supports Davy with the backend development and is performing the first security audits of the platform.',
+        'app.home.team.quinten.text': 'Quinten supports Steve with the backend development and is performing the first security audits of the platform.',
 
         'app.home.team.tom.title': 'Infrastructure',
         'app.home.team.tom.text': 'Tom is a certified Linux Tier2 Architect and is in charge of defining and setting up all building blocks needed for development, hosting and running the platform.',
 
         'app.home.team.thomas.title': 'Finance Advisor',
         'app.home.team.thomas.text': 'Thomas is finalising his PhD in the field of banking and corporate finance at Ghent University - Vlerick Business School. With an affinity for numbers and critical mind, he is always eager to share his views on the business and financial model of FundRequest.',
+
+        'app.home.team.nico.title': 'Technical Advisor',
+        'app.home.team.nico.text': 'Nico has a passion for emerging technologies and is a firm believer in decentralised (micro) payments. With his Master’s degree in commercial engineering and specialisation in Artificial Intelligence he will act as an economical and technical advisor to the FundRequest team.',
 
         'app.home.team.nakrin.title': 'Investment & Growth',
         'app.home.team.nakrin.text': 'Nakrin’s professional experience has been focused on acquisitions and growth strategies in SE Asia. Nakrin holds a MBA from the Harvard Business School and a BSc from USC’s Marshall School of Business where he graduated magna cum laude.',
