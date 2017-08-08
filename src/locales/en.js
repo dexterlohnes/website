@@ -71,6 +71,7 @@ export default {
         'app.home.roadmap.phase3.text': ' Seamless integration. Add funds to issues directly on your favorite platform(s)',
         'app.home.roadmap.phase4.title': 'Pivot & Expand',
         'app.home.roadmap.phase4.text': 'Tired of issues? Fund a project, competition or a bug bounty programme',
+        'app.home.roadmap.infographic.text': 'For more details on our roadmap, check out our ',
 
         'app.home.team.title': 'About Us',
         'app.home.team.core.title': 'CORE TEAM',
