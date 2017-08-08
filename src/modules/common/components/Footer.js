@@ -53,6 +53,8 @@ class Footer extends Component {
                             <div className="social-container">
                                 <a href="https://twitter.com/fundrequest_io" target="_blank"><Icon name="twitter"
                                                                                                    size="lg"/></a>
+                                <a href="https://www.facebook.com/FundRequestplatform/" target="_blank"><Icon name="facebook"
+                                                                                                   size="lg"/></a>                                                                   
                                 <a href="https://blog.fundrequest.io" target="_blank"><Icon name="medium"
                                                                                             size="lg"/></a>
                                 <a href="https://github.com/fundrequest/" target="_blank"><Icon name="github"

@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import SectionHeader from './SectionHeader'
 import MileStone from './MileStone'
+import {FormattedMessage} from 'react-intl'
 import {getPath} from '../../common/tools/URLTools'
 import Scroll from 'react-scroll'
 
@@ -38,7 +39,16 @@ const Roadmap = ({}) => {
                                 title="app.home.roadmap.phase4.title"
                                 subtitle="app.home.roadmap.phase4.text"
                             />
+                            <br/>
+                            <span className="already-joined">
+                                <FormattedMessage
+                                    id="app.home.roadmap.infographic.text"
+                                    tagName={'span'}
+                                />
+                                <a href="https://docs.fundrequest.io/display/PUB/Roadmap" target="_blanc" className="learn-more-hyperlink">infographic</a>
+                            </span>
                         </div>
+
                     </div>
                 </div>
             </div>
