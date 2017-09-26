@@ -89,9 +89,6 @@ export default {
         'app.home.team.davy.title': 'Core Developer',
         'app.home.team.davy.text': 'Davy builds on existing ideas and makes them better. He solves the toughest problems and gets things done. Davy leads the backend development.',
 
-        'app.home.team.david.title': 'Core Developer',
-        'app.home.team.david.text': 'David, a.k.a The Wizard, is in charge of leading the frontend development which includes protecting the usability and user-friendliness.',
-	
         'app.home.team.quinten.title': 'Core Developer',
         'app.home.team.quinten.text': 'Quinten supports Steve with the backend development and is performing the first security audits of the platform.',
 
