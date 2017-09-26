@@ -79,14 +79,6 @@ const Team = ({}) => {
                                     text={'app.home.team.quinten.text'}
                                 />
                             </div>
-                            <div className="gr-4 center gr-12@mobile gr-6@tablet">
-                                <Member
-                                    avatar={getPath('images/app/home/tom-degroote-avatar.jpg')}
-                                    name={'Tom Degroote'}
-                                    title={'app.home.team.tom.title'}
-                                    text={'app.home.team.tom.text'}
-                                />
-                            </div>
                         </div>
                         <br/>
                         <div className="row">
