@@ -65,7 +65,7 @@ const Team = ({}) => {
                             </div>
                             <div className="gr-4 center gr-12@mobile gr-6@tablet">
                                 <Member
-                                    avatar={getPath('images/app/home/steve-maris-avatar.png')}
+                                    avatar={getPath('images/app/home/steve-maris-avatar.jpg')}
                                     name={'Steve Maris'}
                                     title={'app.home.team.steve.title'}
                                     text={'app.home.team.steve.text'}
