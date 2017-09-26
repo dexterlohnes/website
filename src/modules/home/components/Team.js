@@ -114,7 +114,7 @@ const Team = ({}) => {
                                 text={'app.home.team.nico.text'}
                             />
                         </div>
-                        <div className="gr-4 center gr-12@mobile gr-6@tablet">
+                        <div className="gr-6 center gr-12@mobile gr-6@tablet">
                             <Member
                                 avatar={getPath('images/app/home/nakrin-narula-avatar.jpg')}
                                 name={'Nakrin Narula'}
@@ -122,7 +122,7 @@ const Team = ({}) => {
                                 text={'app.home.team.nakrin.text'}
                             />
                         </div>
-                        <div className="gr-4 center gr-12@mobile gr-6@tablet">
+                        <div className="gr-6 center gr-12@mobile gr-6@tablet">
                             <Member
                               avatar={getPath('images/app/home/lasse-clausen.jpg')}
                               name={'Lasse Clausen'}
