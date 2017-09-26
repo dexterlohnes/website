@@ -54,24 +54,14 @@ const Team = ({}) => {
                                     text={'app.home.team.gerbert.text'}
                                 />
                             </div>
-                           {/*
                             <div className="gr-4 center gr-12@mobile gr-6@tablet">
                                 <Member
-                                    avatar={getPath('images/app/home/davy-van-roy-avatar.jpg')}
-                                    name={'Davy Van Roy'}
-                                    title={'app.home.team.davy.title'}
-                                    text={'app.home.team.davy.text'}
+                                  avatar={getPath('images/app/home/davy-van-roy-avatar.jpg')}
+                                  name={'Davy Van Roy'}
+                                  title={'app.home.team.davy.title'}
+                                  text={'app.home.team.davy.text'}
                                 />
-                            
-                            </div>
-                            */}
-                            <div className="gr-4 center gr-12@mobile gr-6@tablet">
-                                <Member
-                                    avatar={getPath('images/app/home/david-hantson-avatar.png')}
-                                    name={'David Hantson'}
-                                    title={'app.home.team.david.title'}
-                                    text={'app.home.team.david.text'}
-                                />
+
                             </div>
                             <div className="gr-4 center gr-12@mobile gr-6@tablet">
                                 <Member
