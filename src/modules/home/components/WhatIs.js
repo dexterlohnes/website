@@ -17,11 +17,11 @@ const WhatIs = ({}) => {
                             <br/>
                             <br/>
                            <div className="description">
-                             <br/>
-                             <br/>
                              <div>
                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Jnd5W7h3igQ" frameborder="0" allowfullscreen></iframe>
                              </div>
+                             <br/>
+                             <br/>
                             <FormattedMessage
                                 id={'app.home.whatis.description1'}
                                 tagName={'p'}
