@@ -95,9 +95,6 @@ export default {
         'app.home.team.steve.title': 'Core Developer',
         'app.home.team.steve.text': 'Steve is a full stack developer with a preference for FrontEnd technology, he knows how to style and structure the web keeping UX and accessibility in mind. Steve joins FundRequest with an ambition to learn and grow with the team.',
 
-        'app.home.team.tom.title': 'Infrastructure',
-        'app.home.team.tom.text': 'Tom is a certified Linux Tier2 Architect and is in charge of defining and setting up all building blocks needed for development, hosting and running the platform.',
-
         'app.home.team.thomas.title': 'Finance Advisor',
         'app.home.team.thomas.text': 'Thomas is finalising his PhD in the field of banking and corporate finance at Ghent University - Vlerick Business School. With an affinity for numbers and critical mind, he is always eager to share his views on the business and financial model of FundRequest.',
 
