@@ -25,6 +25,7 @@ const Introduction = ({language}) => {
                             <br/>
                             <Button text={'app.home.introduction.get-started'}
                                     onClick={() => {
+                                        window.open('https://alpha.fundrequest.io','_blank');
                                     }}
                                     styleType={ButtonTypes.HOT}
                                     className={'crowdsale-button'}
