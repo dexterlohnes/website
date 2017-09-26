@@ -95,6 +95,9 @@ export default {
         'app.home.team.quinten.title': 'Core Developer',
         'app.home.team.quinten.text': 'Quinten supports Steve with the backend development and is performing the first security audits of the platform.',
 
+        'app.home.team.steve.title': 'Core Developer',
+        'app.home.team.steve.text': 'Steve is a full stack developer with a preference for FrontEnd technology, he knows how to style and structure the web keeping UX and accessibility in mind. Steve joins FundRequest with an ambition to learn and grow with the team.',
+
         'app.home.team.tom.title': 'Infrastructure',
         'app.home.team.tom.text': 'Tom is a certified Linux Tier2 Architect and is in charge of defining and setting up all building blocks needed for development, hosting and running the platform.',
 
