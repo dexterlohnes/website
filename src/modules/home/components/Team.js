@@ -124,10 +124,10 @@ const Team = ({}) => {
                         </div>
                         <div className="gr-6 center gr-12@mobile gr-6@tablet">
                             <Member
-                                avatar={getPath('images/app/home/portelio-avatar.jpg')}
-                                name={'Portelio'}
-                                title={'app.home.team.portelio.title'}
-                                text={'app.home.team.portelio.text'}
+                                avatar={getPath('images/app/home/pwc-avatar.jpg')}
+                                name={'PwC'}
+                                title={'app.home.team.pwc.title'}
+                                text={'app.home.team.pwc.text'}
                             />
                         </div>
                     </div>
