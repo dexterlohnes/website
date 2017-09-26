@@ -104,6 +104,12 @@ export default {
         'app.home.team.nakrin.title': 'Investment & Growth',
         'app.home.team.nakrin.text': 'Nakrin’s professional experience has been focused on acquisitions and growth strategies in SE Asia. Nakrin holds a MBA from the Harvard Business School and a BSc from USC’s Marshall School of Business where he graduated magna cum laude.',
 
+        'app.home.team.christopher.title': 'Technology and token economics',
+        'app.home.team.christopher.text': 'Christopher has over 10 years experience as CTO for startups in the IT industry and has a passion for Distributed Ledger Technology (DLT). He is currently a partner at the 1kx blockchain angel fund and an advisor for token generation events.',
+
+        'app.home.team.lasse.title': 'Token launch and token economics',
+        'app.home.team.lasse.text': 'Lasse is a 2x technology founder driven by technology\'s potential to fix the world’s problems. Passively involved with DLTs since the Ethereum pre sale, he’s currently a partner at the 1kx  blockchain angel fund and an advisor on tokenization.',
+
         'app.home.team.dndfisc.title': 'Finance Advisors',
         'app.home.team.dndfisc.text': 'D&D is an accounting & fiscal engineering firm experienced in all aspects of supporting a startup. They provide expert advice not only financially but also on business and marketing plans. The team has been working with them for more than four years now.',
 
