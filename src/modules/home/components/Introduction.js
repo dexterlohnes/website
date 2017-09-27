@@ -50,7 +50,7 @@ const Introduction = ({language}) => {
 
 
                             </div>
-                            <div><span class="already-joined"><span>Our pre-sale is live!</span></span><a href="https://seed.fundrequest.io" class="sign-in-hyperlink"><span>Participate now</span></a></div>
+                            <div><span className="already-joined"><span>Our pre-sale is live!</span></span><a href="https://seed.fundrequest.io" className="sign-in-hyperlink"><span>Participate now</span></a></div>
                         </div>
                     </div>
                 </div>
