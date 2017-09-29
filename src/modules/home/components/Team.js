@@ -130,22 +130,6 @@ const Team = ({}) => {
                               text={'app.home.team.lasse.text'}
                             />
                         </div>
-                        <div className="gr-6 center gr-12@mobile gr-6@tablet">
-                            <Member
-                                avatar={getPath('images/app/home/dndfisc-avatar.jpg')}
-                                name={'D&D Fisc'}
-                                title={'app.home.team.dndfisc.title'}
-                                text={'app.home.team.dndfisc.text'}
-                            />
-                        </div>
-                        <div className="gr-6 center gr-12@mobile gr-6@tablet">
-                            <Member
-                                avatar={getPath('images/app/home/pwc-avatar.jpg')}
-                                name={'PwC'}
-                                title={'app.home.team.pwc.title'}
-                                text={'app.home.team.pwc.text'}
-                            />
-                        </div>
                     </div>
                 </div>
             </div>
