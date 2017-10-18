@@ -16,8 +16,8 @@ const Slack = ({}) => {
                             />
                             <br/>
                             <br/>
-                            <img src={getPath('images/slack.png')} />
-                            <img src={getPath('images/twitter.png')} />
+                            <a href="https://slack.fundrequest.io" target="_blanc"><img src={getPath('images/slack.png')} /></a>
+                            <a href="https://twitter.com/intent/follow?screen_name=fundrequest_io" target="_blanc"><img src={getPath('images/twitter.png')} /></a>
                         </div>
                     </div>
                 </div>
