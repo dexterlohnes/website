@@ -16,11 +16,8 @@ const Slack = ({}) => {
                             />
                             <br/>
                             <br/>
-                        </div>
-                    </div>
-                    <div className="row-full">
-                        <div className="lean">
-                            <iframe src="https://slack.fundrequest.io"></iframe>
+                            <img src={getPath('images/app/slack.png')} />
+                            <img src={getPath('images/app/twitter.png')} />
                         </div>
                     </div>
                 </div>
