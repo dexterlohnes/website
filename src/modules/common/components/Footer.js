@@ -59,8 +59,6 @@ class Footer extends Component {
                                                                                             size="lg"/></a>
                                 <a href="https://github.com/fundrequest/" target="_blank"><Icon name="github"
                                                                                                 size="lg"/></a>
-                                <a href="https://fundrequest.slack.com" target="_blank"><Icon name="slack"
-                                                                                              size="lg"/></a>
                                 <a href="https://fundrequest.io" target="_blank"><Icon name="globe" size="lg"/></a>
                             </div>
                         </div>
