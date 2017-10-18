@@ -16,8 +16,8 @@ const Slack = ({}) => {
                             />
                             <br/>
                             <br/>
-                            <img src={getPath('images/app/slack.png')} />
-                            <img src={getPath('images/app/twitter.png')} />
+                            <img src={getPath('images/slack.png')} />
+                            <img src={getPath('images/twitter.png')} />
                         </div>
                     </div>
                 </div>
