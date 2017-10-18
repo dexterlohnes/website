@@ -3,7 +3,7 @@ export default {
     messages: {
         'app.fr.welcome': 'Welcome',
 
-        'app.header.sign-up': 'Get Invited',
+        'app.header.sign-up': 'Join Us',
         'app.header.crowdsale': 'Crowdsale',
 
         'app.slack.title': 'Come and join our Community!',
