@@ -15,12 +15,10 @@ const Slack = ({}) => {
                                 title={'app.slack.title'}
                             />
                             <br/>
-                            <br/>
-                        </div>
-                    </div>
-                    <div className="row-full">
-                        <div className="lean">
-                            <iframe src="https://slack.fundrequest.io"></iframe>
+                            <a href="https://slack.fundrequest.io" target="_blanc"><img src={getPath('images/slack.png')} /></a>&nbsp;&nbsp;&nbsp;
+                            <a href="https://twitter.com/intent/follow?screen_name=fundrequest_io" target="_blanc"><img src={getPath('images/twitter.png')} /></a>
+                            <br />
+                            <br />
                         </div>
                     </div>
                 </div>
