@@ -2,7 +2,7 @@ FROM debian:8.7
 LABEL maintainer "karel@striegel.be"
 
 RUN apt-get update && \
-    apt-get upgrade && \
+    apt-get -y upgrade && \
     apt-get install curl vim git -y && \
     curl -sL https://deb.nodesource.com/setup_7.x |  bash - && \
     apt-get install -y nodejs 
