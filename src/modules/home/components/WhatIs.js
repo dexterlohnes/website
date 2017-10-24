@@ -17,7 +17,7 @@ const WhatIs = ({}) => {
                             <br/>
                            <div className="description">
                              <div>
-                               <iframe width="560" height="315" src="https://www.youtube.com/embed/Jnd5W7h3igQ" frameborder="0" allowfullscreen></iframe>
+                               <div className='embed-container'><iframe src='https://www.youtube.com/embed/Jnd5W7h3igQ' frameborder='0' allowfullscreen></iframe></div>
                              </div>
                              <br/>
                              <br/>
