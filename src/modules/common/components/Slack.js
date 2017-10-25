@@ -15,7 +15,7 @@ const Slack = ({}) => {
                                 title={'app.slack.title'}
                             />
                             <br/>
-                            <a className="typeform-share button" href="https://goo.gl/4bESsj" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#267DDD;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank"><img src={getPath('images/slack.png')} /></a>&nbsp;&nbsp;&nbsp;
+                            <a className="typeform-share button" href="https://goo.gl/4bESsj" data-mode="popup" style="{{display:inline-block,text-decoration:none,background-color:#267DDD,color:white,cursor:pointer,font-family:Helvetica,Arial,sans-serif,font-size:20px,line-height:50px,text-align:center,margin:0,height:50px,padding:0px 33px,border-radius:25px,max-width:100%,white-space:nowrap,overflow:hidden,text-overflow:ellipsis,font-weight:bold,-webkit-font-smoothing:antialiased,-moz-osx-font-smoothing:grayscale}}" target="_blank"><img src={getPath('images/slack.png')} /></a>&nbsp;&nbsp;&nbsp;
                             <a href="https://twitter.com/intent/follow?screen_name=fundrequest_io" target="_blanc"><img src={getPath('images/twitter.png')} /></a>
                             <br />
                             <br />
