@@ -1,6 +1,7 @@
 doctype html
 html(dir=dir)
   head
+    include gtm.html
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=Edge,chrome=1')
     title FundRequest
@@ -16,6 +17,8 @@ html(dir=dir)
 
     block header
   body(data-version='0.0.1')
+    include gtm-noscript.html
     script(id='preloadedData', type='application/json')!=data
     block content
     block scripts
+    include slack-register-popup.html
