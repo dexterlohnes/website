@@ -15,7 +15,7 @@ const Slack = ({}) => {
                                 title={'app.slack.title'}
                             />
                             <br/>
-                            <a className="typeform-share slack-register button" href="https://goo.gl/4bESsj" data-mode="popup" target="_blank"><img src={getPath('images/slack.png')} /></a>&nbsp;&nbsp;&nbsp;
+                            <a className="typeform-share slack-register button" href="https://goo.gl/4bESsj" data-mode="drawer_right" target="_blank"><img src={getPath('images/slack.png')} /></a>&nbsp;&nbsp;&nbsp;
                             <a href="https://twitter.com/intent/follow?screen_name=fundrequest_io" target="_blanc"><img src={getPath('images/twitter.png')} /></a>
                             <br />
                             <br />
