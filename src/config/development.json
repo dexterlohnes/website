@@ -1,7 +1,0 @@
-{
-    "frontEndHost": "http://localhost:8080",
-    "backEndHost": "http://localhost:8888",
-    "basePath" : "/",
-    "publicAssetPath" : "/assets/",
-    "useHashRouting" : false
-}
