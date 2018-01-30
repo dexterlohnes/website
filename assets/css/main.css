@@ -43,9 +43,10 @@ nav .navbar-brand { max-width: 283px; }
 nav .navbar-brand img { width: 100%; }
 nav ul.nav { margin-top: 15px; }
 nav ul li { margin-left: 8px; margin-right: 0px; }
-nav li a { text-transform: uppercase; color: #FFF; font-size: 20px; font-weight: 400; }
+nav li a { text-transform: uppercase; color: #FFF; font-size: 20px; font-weight: 400; text-align: center;}
 nav li a.active { font-weight: 600; }
 nav li a:hover, nav li a:active { background-color: transparent !important; color: #FFF; font-weight: 600;}
+nav li a:after {display: block; content: attr(title); font-weight: bold; height: 0; overflow: hidden; visibility: hidden;}
 nav li.button { margin-top: -3px; padding: 3px 16px; background-color: #f48c48; border-radius: 10px; }
 nav li.button a { font-weight: 400; }
 nav li.button a:hover { font-weight: 600; }
@@ -222,9 +223,9 @@ section.team .teammember img { border-radius: 90px;}
 section.team .teammember img.socialmedia { border-radius: 0px;}
 section.team .memberinfo { position: relative; margin-top: 30px; background-color: #FFF; padding: 35px 10px 40px 10px; border-radius: 15px; }
 section.team .memberinfo h4 { font-family: 'jaf-domus'; margin: 0; font-size: 20px; color: #556992; text-transform: uppercase; font-weight: 700; }
-section.team .memberinfo p.tag { font-family: 'jaf-domus'; font-size: 20px; font-weight: 400; color: #556992; margin-bottom: 48px;}
+section.team .memberinfo p.tag { font-family: 'jaf-domus'; font-size: 20px; font-weight: 400; color: #556992; margin-bottom: 15px;}
 section.team .memberinfo a { margin: 0 7px; }
-section.team .centerbottom { position: absolute; bottom: 15px; width: 100%; }
+section.team .centerbottom { position: absolute; bottom: 15px; width: 100%; left: 0px;}
 section.team .mobile-show { display: none; }
 /* partners */
 section.partners { padding: 130px 0;}
