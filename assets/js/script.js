@@ -69,7 +69,7 @@ $(document).ready( function() {
     		$(".monthselector").html("");
     		curirspinner = $(".monthselector").irSpinner({
 				list: submonths,
-				vertical: ($(window).width() < 960  ? false : true)
+				vertical: ($(window).width() < 991  ? false : true)
 			});
         },
         onAfterSlide: function(_el)
@@ -80,11 +80,14 @@ $(document).ready( function() {
     		$(currentmonthitem).find(".month").each(function() {
     			submonths.push($(this).attr("data-month"));
     		});
-    		$(".monthselector").html("");
-    		curirspinner = $(".monthselector").irSpinner({
-				list: submonths,
-				vertical: ($(window).width() < 960  ? false : true)
-			});
+    		if(submonths.length > 0)
+    		{
+	    		$(".monthselector").html("");
+	    		curirspinner = $(".monthselector").irSpinner({
+					list: submonths,
+					vertical: ($(window).width() < 991  ? false : true)
+				});
+    		}
         }
     });
 

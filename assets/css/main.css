@@ -81,7 +81,7 @@ section.header img.rect { z-index: 0; }
 /*Footer */
 section.footer { padding-bottom: 0; }
 section.footer h2 { margin: 0; font-size: 25px; text-transform: uppercase; color: #FFF; }
-section.footer a { display: inline-block; float: left; position: relative; top: 5px; }
+section.footer a { display: inline-block; /*float: left;*/ position: relative; top: 5px; }
 section.footer a.margin { margin: 0 14px; }
 section.footer a.marginR { margin: 0 14px 0 0; }
 section.footer a.marginL { margin: 0 0 0 14px; }
@@ -127,7 +127,7 @@ section.steps .position { position: relative;/* margin-top: 100px;*/ }
 section.steps .lSPager { position: absolute; left: 0; top: 50%; transform: translateY(-50%) !important;}
 section.steps .lSSlideOuter .lSPager.lSpg li { height: 46px; margin: 35px 0; list-style-type: none; display: block; }
 section.steps .lSSlideOuter .lSPager.lSpg > li a { font-size: 25px; color: #8ed1ee; border: 2px solid #8ed1ee; border-radius: 45px; background-color: #f4f9fb; padding: 6px 18px; display: initial;  }
-section.steps .lSSlideOuter .lSPager.lSpg > li a:hover { text-decoration: none; }
+section.steps .lSSlideOuter .lSPager.lSpg > li:hover a{ text-decoration: none; background-color: #23a7e0;  color: #FFF; border: 2px solid #23a7e0;}
 section.steps .vertical-line { width: 2px; background-color: #8ed1ee; height: 100%; position: absolute; left: 32px; }
 section.steps .lSSlideOuter .lSPager.lSpg > li.active a { border: 2px solid #23a7e0; text-decoration: none; background-color: #23a7e0; color: #FFF; }
 section.steps .lSSlideOuter .lSPager.lSpg > li { position: relative; }
@@ -155,7 +155,7 @@ section.roadmap .position { position: relative;/* margin-top: 100px;*/ }
 section.roadmap .lSPager { position: absolute; left: 0; top: 50%; transform: translateY(-50%) !important;}
 section.roadmap .lSSlideOuter .lSPager.lSpg li { height: 46px; margin: 35px 0; list-style-type: none; display: block; }
 section.roadmap .lSSlideOuter .lSPager.lSpg > li a { display: block; text-indent: 0px; text-align: center; font-size: 16px; line-height:50px; color: #8ed1ee; border: 2px solid #8ed1ee; border-radius: 45px; background-color: #f4f9fb; height: 54px; width: 54px;}
-section.roadmap .lSSlideOuter .lSPager.lSpg > li a:hover { text-decoration: none; }
+section.roadmap .lSSlideOuter .lSPager.lSpg > li:hover a{ text-decoration: none; background-color: #23a7e0;  color: #FFF; border: 2px solid #23a7e0;}
 section.roadmap .vertical-line { width: 2px; background-color: #8ed1ee; height: 100%; position: absolute; left: 32px; }
 section.roadmap .lSSlideOuter .lSPager.lSpg > li.active a { border: 2px solid #23a7e0; text-decoration: none; background-color: #23a7e0; color: #FFF; }
 section.roadmap .lSSlideOuter .lSPager.lSpg > li { position: relative; }
@@ -251,6 +251,10 @@ section.partners .nopadding .border-l { border-left: 1px solid #bde4f6; }
 	section.team,
 	section.footer { padding: 150px 0 150px 0; }
 	section.footer { padding-bottom: 0px; }
+	section.footer a.margin { margin: 0 10px; }
+	section.footer a.marginR { margin: 0 10px 0 0; }
+	section.footer a.marginL { margin: 0 0 0 10px; }
+	section.roadmap .irSpinner { width: 120px; }
 }
 
 @media screen and (max-width: 991px) {
@@ -282,6 +286,7 @@ section.partners .nopadding .border-l { border-left: 1px solid #bde4f6; }
 	section.steps .stepsbg {left: -415px; width: 120%; }
 
 	section.roadmap { overflow: hidden; }
+	section.roadmap .irSpinner { width: 80%; }
 	section.roadmap { padding: 100px 0 120px 0; }
 	section.roadmap a.scrolltonext { bottom: -20px; }
 	section.roadmap .position {margin-top: 50px;}
@@ -304,6 +309,7 @@ section.partners .nopadding .border-l { border-left: 1px solid #bde4f6; }
 	section.footer .navlinks a { font-size: 18px; }
 	section.info { padding: 30px 0 50px 0; }
 	section.footer .lSSlideOuter .lightSlider > *, section.footer .lSSlideOuter .lSGallery li { max-width: 185px !important; }
+	.irSpinner ul.horizontal { margin-left: -10px; }
 }
 
 @media screen and (max-width: 767px) {
