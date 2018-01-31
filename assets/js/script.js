@@ -65,7 +65,7 @@ $(document).ready( function() {
 
 
         	var slidecontainer = $(_el).closest(".lSSlideOuter");
-        	var currentmonthitem = slidecontainer.find(".monthslider:eq(" + (_el.getCurrentSlideCount() -1) + ")")
+        	/*var currentmonthitem = slidecontainer.find(".monthslider:eq(" + (_el.getCurrentSlideCount() -1) + ")")
     		var submonths = [];
     		$(currentmonthitem).find(".month").each(function() {
     			submonths.push($(this).attr("data-month"));
@@ -74,11 +74,11 @@ $(document).ready( function() {
     		curirspinner = $(".monthselector").irSpinner({
 				list: submonths,
 				vertical: ($(window).width() < 991  ? false : true)
-			});
+			});*/
         },
         onAfterSlide: function(_el)
         {
-        	var slidecontainer = $(_el).closest(".lSSlideOuter");
+        	/*var slidecontainer = $(_el).closest(".lSSlideOuter");
         	var currentmonthitem = slidecontainer.find(".monthslider:eq(" + (_el.getCurrentSlideCount() -1) + ")")
     		var submonths = [];
     		$(currentmonthitem).find(".month").each(function() {
@@ -91,7 +91,7 @@ $(document).ready( function() {
 					list: submonths,
 					vertical: ($(window).width() < 991  ? false : true)
 				});
-    		}
+    		}*/
         }
     });
 
