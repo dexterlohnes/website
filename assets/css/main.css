@@ -18,7 +18,7 @@ section.header img.rect { position: absolute; right: 0; bottom: 0; width: auto; 
 
 /*page container*/
 body {
-	backgroud-color: #e4f2f8;
+	background-color: #e4f2f8 !important;
 }
 
 .page-container {
