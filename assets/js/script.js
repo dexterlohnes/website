@@ -36,10 +36,35 @@ $(document).ready(function() {
         ]
     });
 
+    $('.fnd-header a[href^="#"]').on('click', function(e) {
+        nav = $('.navlinks');
+        e.preventDefault();
+        $('a').each(function() {
+            $(this).removeClass('active');
+        });
+
+        $(this).addClass('active');
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 500, 'linear');
+    });
+
     $(".scrolltonext").on("click", function() {
         $('html, body').animate({
             scrollTop: $(this).closest('section').next().offset().top
         }, 800);
         return false;
     });
+
+    document.addEventListener('click', function(e) {
+        var x = e.target;
+        if (x.nodeName === 'A') {
+            var href = x.getAttribute('href');
+
+            if (href && href.charAt(0) !== '#') {
+                href += (/\?/.test(href) ? '&' : '?') + window.location.search.substring(1);
+                x.setAttribute('href', href);
+            }
+        }
+    }, false);
 });
