@@ -7,7 +7,7 @@ body {
 .section--steps, .section--team { background-color: #f4f9fb; }
 
 /* steps blok 3 */
-.section--steps p.intro_sec3 { color: #545556; }
+.section--steps p { color: #545556; }
 .section--steps h3 { margin: 0; color: #23a7e0; font-size: 30px; padding-bottom: 30px; font-weight: 700; }
 .section--steps .stepsbg { position: absolute; bottom: 0; left: -185px; }
 
