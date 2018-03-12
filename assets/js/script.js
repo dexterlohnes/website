@@ -49,9 +49,14 @@ $(document).ready(function() {
         }, 500, 'linear');
     });
 
-    $(".scrolltonext").on("click", function() {
+    $('[data-scroll-to]').on('click', function() {
+        var $this = $(this);
+        var next = $this.data('scroll-to') === 'next';
+        var $section = $this.closest('section');
+        var offset = next ? $section.next().offset().top : $section.offset().top;
+
         $('html, body').animate({
-            scrollTop: $(this).closest('section').next().offset().top
+            scrollTop: offset
         }, 800);
         return false;
     });

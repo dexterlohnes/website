@@ -1,5 +1,4 @@
-<section class="section section--compact section--steps">
-    <img class="stepsbg" src="assets/img/section-3.png" alt="stepsbg">
+<section id="steps" class="section section--steps section--compact section--light section--squares section--squares--bottom">
     <div class="container">
         <h2 class="section__title">Fundrequest in 3 easy steps:</h2>
         <div class="row">
@@ -13,7 +12,7 @@
             <div class="col-12">
                 <div class="vertical-line"></div>
                 <div class="row text-center text-md-left py-md-5">
-                    <div class="col-12 col-sm-3 col-md-2 d-flex justify-content-center justify-content-md-start align-items-center">
+                    <div class="col-12 col-md-2 d-flex justify-content-center justify-content-md-start align-items-center">
                         <div class="nav flex-row flex-md-column nav-pills" id="v-pills-tab" role="tablist"
                              aria-orientation="vertical">
                             <a class="nav-link active d-flex align-items-center" id="v-pills-create-tab"
@@ -35,12 +34,12 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-9 col-md-10">
+                    <div class="col-12 col-md-10">
                         <div class="tab-content tab-content--smooth-fade" id="v-pills-tabContent">
                             <div class="tab-pane active" id="v-pills-create" role="tabpanel"
                                  aria-labelledby="v-pills-create-tab">
                                 <div class="row">
-                                    <div class="col-12 col-sm-4 d-flex justify-content-center flex-column">
+                                    <div class="col-12 col-md-4 d-flex justify-content-center flex-column">
                                         <div class="text-center d-block d-md-none">
                                             <h3>Create issue</h3>
                                         </div>
@@ -48,7 +47,7 @@
                                             {% include svg/create-issue.html %}
                                         </div>
                                     </div>
-                                    <div class="col-12 col-sm-8 d-flex justify-content-center flex-column">
+                                    <div class="col-12 col-md-8 d-flex justify-content-center flex-column">
                                         <h3 class="d-none d-md-block">Create issue</h3>
                                         <p>
                                             Any user can create a request based on a feature they want to see or a bug
@@ -64,7 +63,7 @@
                             <div class="tab-pane" id="v-pills-fund" role="tabpanel"
                                  aria-labelledby="v-pills-fund-tab">
                                 <div class="row">
-                                    <div class="col-12 col-sm-4 d-flex justify-content-center flex-column">
+                                    <div class="col-12 col-md-4 d-flex justify-content-center flex-column">
                                         <div class="text-center d-block d-md-none">
                                             <h3>Fund issue</h3>
                                         </div>
@@ -72,7 +71,7 @@
                                             {% include svg/fund-issue.html %}
                                         </div>
                                     </div>
-                                    <div class="col-12 col-sm-8 d-flex justify-content-center flex-column">
+                                    <div class="col-12 col-md-8 d-flex justify-content-center flex-column">
                                         <h3 class="d-none d-md-block">Fund issue</h3>
                                         <p>
                                             Any developer can propose a solution to an issue. All proposed solutions get
@@ -85,7 +84,7 @@
                             <div class="tab-pane" id="v-pills-approve" role="tabpanel"
                                  aria-labelledby="v-pills-approve-tab">
                                 <div class="row">
-                                    <div class="col-12 col-sm-4 d-flex justify-content-center flex-column">
+                                    <div class="col-12 col-md-4 d-flex justify-content-center flex-column">
                                         <div class="text-center d-block d-md-none">
                                             <h3>Approve solution</h3>
                                         </div>
@@ -93,7 +92,7 @@
                                             {% include svg/approve-solution.html %}
                                         </div>
                                     </div>
-                                    <div class="col-12 col-sm-8 d-flex justify-content-center flex-column">
+                                    <div class="col-12 col-md-8 d-flex justify-content-center flex-column">
                                         <h3 class="d-none d-md-block">Approve solution</h3>
                                         <p>
                                             After the issue is solved, all funds are transferred. The developer that
@@ -109,12 +108,9 @@
                 </div>
             </div>
         </div>
-        <a class="scrolltonext" href="#">
-            <div class="scroller">
-                <img src="assets/img/scrollblue.png" alt="scroll image"> <br>
-            </div>
-        </a>
     </div>
-    <div class="triangle-top"></div>
-    <div class="triangle-bottom"></div>
+    <div class="triangle triangle--top"></div>
+    <div class="triangle triangle--bottom"></div>
+    <a class="scrolltonext scrolltonext--top" data-scroll-to="current" href="#"></a>
+    <a class="scrolltonext" data-scroll-to="next" href="#"></a>
 </section>
