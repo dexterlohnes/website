@@ -2,6 +2,7 @@ $(document).ready(function() {
     var navigation = document.querySelector(".fnd-header");
     var headroom = new Headroom(navigation, {
         tolerance: 5,
+        offset: 50,
         classes: {
             top: "navbar-dark",
             notTop: "navbar-light"
