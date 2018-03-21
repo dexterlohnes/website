@@ -17,6 +17,7 @@ npm-debug.log
 .truffle-solidity-loader
 
 .idea
+*.iml
 
 tmp
 .tmp
